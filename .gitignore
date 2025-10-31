@@ -1,3 +1,17 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Archivos y carpetas temporales de Godot
+.import/
+.godot/
+export.cfg
+export_presets.cfg
+
+# Archivos de sistema
+.DS_Store
+thumbs.db
+
+# Carpetas del editor o builds
+build/
+bin/
