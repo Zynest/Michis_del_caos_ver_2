@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dpmo1wq5rmufm"]
+[gd_scene load_steps=3 format=3 uid="uid://dpmo1wq5rmufm"]
 
 [ext_resource type="Script" uid="uid://c5arh078npgy3" path="res://Scripts/pantalla_de_ganar.gd" id="1_xfx4y"]
+[ext_resource type="Texture2D" uid="uid://dg5bftpf1sl2d" path="res://assets/Nadie puede bañarse dos veces en el mismo río.png" id="2_aq1i5"]
 
 [node name="Pantalla_de_ganar" type="Control"]
 layout_mode = 3
@@ -49,5 +50,9 @@ offset_bottom = -246.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "Jugar de nuevo"
+
+[node name="NadiePuedeBañarseDosVecesEnElMismoRío" type="Sprite2D" parent="."]
+position = Vector2(164, 485)
+texture = ExtResource("2_aq1i5")
 
 [connection signal="pressed" from="Restart_button" to="." method="_on_restart_button_pressed"]

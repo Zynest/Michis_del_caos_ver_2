@@ -6,11 +6,6 @@ const JUMP_VELOCITY = 450.0
 
 func _physics_process(delta: float) -> void:
 	
-	#if (velocity.x > 1 || velocity.x < -1):
-		#animated_sprite_2d.play("run")
-	#else:
-		#animated_sprite_2d.play("idle")
-	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 		animated_sprite_2d.play("jump")
@@ -32,7 +27,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		animated_sprite_2d.play("idle")
 		
-	if velocity.y > 0:
+	if velocity.y > 0 and not is_on_floor():
 		animated_sprite_2d.play("land")
+	elif velocity.y < 0 and not is_on_floor():
+		animated_sprite_2d.play("jump")
 	
 	move_and_slide()
