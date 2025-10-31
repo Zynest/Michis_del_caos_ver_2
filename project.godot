@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="InsanePussyDestroyer"
-run/main_scene="uid://d03vnhsuhjelp"
-config/features=PackedStringArray("4.5", "Forward Plus")
+run/main_scene="uid://bjgschekl3ncx"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="uid://mv7v0mm77048"
 
 [autoload]

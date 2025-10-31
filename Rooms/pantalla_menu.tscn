@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjgschekl3ncx"]
+
+[ext_resource type="Script" uid="uid://dvtufdbwlauxn" path="res://Scripts/pantalla_menu.gd" id="1_f1jph"]
+[ext_resource type="Texture2D" uid="uid://bhj5y8eqqxhyv" path="res://assets/PantallaMenu_Prueba.jpg" id="2_pcby0"]
+[ext_resource type="Texture2D" uid="uid://dxsleajf6q16g" path="res://assets/icon.svg" id="3_q4whh"]
+
+[node name="Pantalla_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f1jph")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_pcby0")
+
+[node name="Menu" type="Label" parent="."]
+layout_mode = 0
+offset_left = 479.0
+offset_top = 219.0
+offset_right = 645.0
+offset_bottom = 302.0
+theme_override_font_sizes/font_size = 60
+text = "Menu"
+
+[node name="Play" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 497.0
+offset_top = 335.0
+offset_right = 625.0
+offset_bottom = 463.0
+texture_normal = ExtResource("3_q4whh")
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
