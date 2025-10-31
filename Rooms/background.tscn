@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=4 uid="uid://bka8vtlrrbngn"]
 
-[ext_resource type="Texture2D" uid="uid://db2qec45ks7y6" path="res://Sprite-0007.png" id="1_eqej7"]
-[ext_resource type="Texture2D" uid="uid://bifa4h2y15y35" path="res://tile_floor.png" id="2_jhyx6"]
-[ext_resource type="Texture2D" uid="uid://b30i233cpki1x" path="res://wardrobes_BR.png" id="3_jhyx6"]
-[ext_resource type="Texture2D" uid="uid://dbrpfpo5gxi3" path="res://beds_BR.png" id="4_ubh1h"]
+[ext_resource type="Texture2D" uid="uid://db2qec45ks7y6" path="res://assets/Sprite-0007.png" id="1_eqej7"]
+[ext_resource type="Texture2D" uid="uid://bifa4h2y15y35" path="res://assets/tile_floor.png" id="2_jhyx6"]
+[ext_resource type="Texture2D" uid="uid://b30i233cpki1x" path="res://assets/wardrobes_BR.png" id="3_jhyx6"]
+[ext_resource type="Texture2D" uid="uid://dbrpfpo5gxi3" path="res://assets/beds_BR.png" id="4_ubh1h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eqej7"]
 texture = ExtResource("2_jhyx6")

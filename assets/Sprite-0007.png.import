@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1rqxf43782fj"
-path="res://.godot/imported/floorswalls_LRK.png-9d8ba551ea22ee1fcf3f5a64642c6046.ctex"
+uid="uid://db2qec45ks7y6"
+path="res://.godot/imported/Sprite-0007.png-4eb4c873c85533e0b258870d63eb7982.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://floorswalls_LRK.png"
-dest_files=["res://.godot/imported/floorswalls_LRK.png-9d8ba551ea22ee1fcf3f5a64642c6046.ctex"]
+source_file="res://assets/Sprite-0007.png"
+dest_files=["res://.godot/imported/Sprite-0007.png-4eb4c873c85533e0b258870d63eb7982.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bifa4h2y15y35"
-path="res://.godot/imported/tile_floor.png-253eac3c2b4ad2c0b01ed3d9b92ab263.ctex"
+uid="uid://dtiebnbnp5svr"
+path="res://.godot/imported/cabinets_BA.png-497bd2da328f3f33cbc2c70a72e466f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tile_floor.png"
-dest_files=["res://.godot/imported/tile_floor.png-253eac3c2b4ad2c0b01ed3d9b92ab263.ctex"]
+source_file="res://assets/cabinets_BA.png"
+dest_files=["res://.godot/imported/cabinets_BA.png-497bd2da328f3f33cbc2c70a72e466f4.ctex"]
 
 [params]
 

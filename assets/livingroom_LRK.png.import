@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0vr1hsvjw0dc"
-path="res://.godot/imported/fixtures_BA.png-338bc6394cb8363e2150062f1d000eab.ctex"
+uid="uid://chcv2o41jikaq"
+path="res://.godot/imported/livingroom_LRK.png-443bb2fe7eb1af45a829308291a82450.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fixtures_BA.png"
-dest_files=["res://.godot/imported/fixtures_BA.png-338bc6394cb8363e2150062f1d000eab.ctex"]
+source_file="res://assets/livingroom_LRK.png"
+dest_files=["res://.godot/imported/livingroom_LRK.png-443bb2fe7eb1af45a829308291a82450.ctex"]
 
 [params]
 

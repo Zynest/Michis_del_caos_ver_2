@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6l80p8ajhjnk"
-path="res://.godot/imported/decorations_BR.png-5a7398b046bf58891f9ff7077f323d25.ctex"
+uid="uid://0vr1hsvjw0dc"
+path="res://.godot/imported/fixtures_BA.png-7e97748f1438ac5d2562e61ef941fa41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://decorations_BR.png"
-dest_files=["res://.godot/imported/decorations_BR.png-5a7398b046bf58891f9ff7077f323d25.ctex"]
+source_file="res://assets/fixtures_BA.png"
+dest_files=["res://.godot/imported/fixtures_BA.png-7e97748f1438ac5d2562e61ef941fa41.ctex"]
 
 [params]
 

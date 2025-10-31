@@ -8,10 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://cr7thkcpxmsar" path="res://assets/0fc84f0c3d4c39f.png" id="5_1k58x"]
 [ext_resource type="PackedScene" uid="uid://dckekrq2nwq1a" path="res://Rooms/5_peso.tscn" id="5_5nhsa"]
 [ext_resource type="Script" uid="uid://cxm8ul1mybycm" path="res://Scripts/Door2D.gd" id="5_g5n8v"]
-[ext_resource type="Texture2D" uid="uid://bifa4h2y15y35" path="res://tile_floor.png" id="9_v0v6w"]
-[ext_resource type="Texture2D" uid="uid://d1rqxf43782fj" path="res://floorswalls_LRK.png" id="10_c4j1s"]
-[ext_resource type="Texture2D" uid="uid://b30i233cpki1x" path="res://wardrobes_BR.png" id="10_hkrhj"]
-[ext_resource type="Texture2D" uid="uid://6l80p8ajhjnk" path="res://decorations_BR.png" id="11_wdbfl"]
+[ext_resource type="Texture2D" uid="uid://bifa4h2y15y35" path="res://assets/tile_floor.png" id="9_v0v6w"]
+[ext_resource type="Texture2D" uid="uid://d1rqxf43782fj" path="res://assets/floorswalls_LRK.png" id="10_c4j1s"]
+[ext_resource type="Texture2D" uid="uid://b30i233cpki1x" path="res://assets/wardrobes_BR.png" id="10_hkrhj"]
+[ext_resource type="Texture2D" uid="uid://6l80p8ajhjnk" path="res://assets/decorations_BR.png" id="11_wdbfl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hkrhj"]
 size = Vector2(1750, 20)
