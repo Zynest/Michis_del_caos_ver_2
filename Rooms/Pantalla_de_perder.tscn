@@ -1,13 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://u62vy0dxmnsp"]
+[gd_scene load_steps=2 format=3 uid="uid://cfgbd1swcb1kg"]
 
-[ext_resource type="Script" uid="uid://cakqibula5j2p" path="res://Scripts/pantalla_de_perder.gd" id="1_cs0vs"]
+[ext_resource type="Script" uid="uid://ylr8u5qkc6w" path="res://Scripts/pantalla_de_perder.gd" id="1_owudw"]
 
-[node name="Pantalla_perder" type="Control"]
+[node name="pantalla_de_perder" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("1_cs0vs")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_owudw")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -16,23 +18,37 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(28.72, 16.359997)
-color = Color(0.4094762, 0.14082968, 0.023351356, 1)
+color = Color(0.92941177, 0, 0, 0.5254902)
 
-[node name="GameOver" type="Label" parent="."]
-layout_mode = 0
-offset_left = 524.0
-offset_top = 347.0
-offset_right = 626.0
-offset_bottom = 370.0
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
 text = "Perdistes bot"
 
-[node name="Restart_button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 535.0
-offset_top = 385.0
-offset_right = 611.0
-offset_bottom = 416.0
-text = "Reiniciar"
+[node name="Salir_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = 33.0
+offset_right = 21.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 16
+text = "Salir"
 
-[connection signal="pressed" from="Restart_button" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="Salir_button" to="." method="_on_salir_button_pressed"]

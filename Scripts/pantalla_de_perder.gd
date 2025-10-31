@@ -1,4 +1,5 @@
 extends Control
 
-#func _on_restart_button_pressed() -> void:
-	#Game.restart_game()
+func _on_salir_button_pressed() -> void:
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://Rooms/Room_1.tscn")

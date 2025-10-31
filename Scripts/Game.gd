@@ -1,12 +1,12 @@
 extends Node
 
 var score = 0
-var time_left = 20.0
+var time_left = 2
 var target_score = 0
 
 func reset():
 	score = 0
-	time_left = 20.0
+	time_left = 2
 
 func add_score(v:int) -> void:
 	score += v
