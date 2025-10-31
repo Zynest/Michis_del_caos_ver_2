@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbqxsndeg3mml"
-path="res://.godot/imported/textiles_BA.png-66350a603eaa4842426988be4e92f202.ctex"
+uid="uid://cbcdrnwn56ywb"
+path="res://.godot/imported/copa_mundial.png-ebebd1f58a4d3349c21f1155e8a5d141.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textiles_BA.png"
-dest_files=["res://.godot/imported/textiles_BA.png-66350a603eaa4842426988be4e92f202.ctex"]
+source_file="res://assets/copa_mundial.png"
+dest_files=["res://.godot/imported/copa_mundial.png-ebebd1f58a4d3349c21f1155e8a5d141.ctex"]
 
 [params]
 

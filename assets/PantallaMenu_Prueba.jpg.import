@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbqxsndeg3mml"
-path="res://.godot/imported/textiles_BA.png-66350a603eaa4842426988be4e92f202.ctex"
+uid="uid://bhj5y8eqqxhyv"
+path="res://.godot/imported/PantallaMenu_Prueba.jpg-ab6bd8ad7e1c27f19b8f55d21f9c4569.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textiles_BA.png"
-dest_files=["res://.godot/imported/textiles_BA.png-66350a603eaa4842426988be4e92f202.ctex"]
+source_file="res://assets/PantallaMenu_Prueba.jpg"
+dest_files=["res://.godot/imported/PantallaMenu_Prueba.jpg-ab6bd8ad7e1c27f19b8f55d21f9c4569.ctex"]
 
 [params]
 
