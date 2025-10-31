@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dpmo1wq5rmufm"]
+[gd_scene load_steps=4 format=3 uid="uid://dpmo1wq5rmufm"]
 
 [ext_resource type="Script" uid="uid://c5arh078npgy3" path="res://Scripts/pantalla_de_ganar.gd" id="1_xfx4y"]
+[ext_resource type="FontFile" uid="uid://54l50lk1kjsu" path="res://assets/Minecraft.ttf" id="2_a3vat"]
 [ext_resource type="Texture2D" uid="uid://dg5bftpf1sl2d" path="res://assets/Nadie puede bañarse dos veces en el mismo río.png" id="2_aq1i5"]
 
 [node name="Pantalla_de_ganar" type="Control"]
@@ -34,6 +35,7 @@ offset_right = 58.5
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_a3vat")
 text = "Ganastes crack"
 
 [node name="Restart_button" type="Button" parent="."]
@@ -49,6 +51,7 @@ offset_right = 38.0
 offset_bottom = -246.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_a3vat")
 text = "Jugar de nuevo"
 
 [node name="NadiePuedeBañarseDosVecesEnElMismoRío" type="Sprite2D" parent="."]

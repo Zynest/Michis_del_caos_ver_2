@@ -3706,21 +3706,6 @@ theme_override_colors/font_color = Color(1, 0.023529412, 0, 1)
 theme_override_fonts/font = ExtResource("4_jtj7u")
 theme_override_font_sizes/font_size = 30
 
-[node name="5peso" parent="." instance=ExtResource("5_5nhsa")]
-position = Vector2(703, 427)
-
-[node name="Vase_A2" parent="." instance=ExtResource("4_uj1e3")]
-position = Vector2(737, 325)
-
-[node name="Vase_A3" parent="." instance=ExtResource("4_uj1e3")]
-position = Vector2(547, 262)
-
-[node name="Vase_A4" parent="." instance=ExtResource("4_uj1e3")]
-position = Vector2(384, 228)
-
-[node name="Vase_A5" parent="." instance=ExtResource("4_uj1e3")]
-position = Vector2(417, 357)
-
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 324)
 
@@ -3790,3 +3775,20 @@ scale = Vector2(1, 0.63999516)
 [node name="StaticBody2D10" parent="collisiones" instance=ExtResource("17_dfs67")]
 position = Vector2(528, 466.99997)
 scale = Vector2(1.52, 1.12)
+
+[node name="rompibles" type="Node" parent="."]
+
+[node name="5peso" parent="rompibles" instance=ExtResource("5_5nhsa")]
+position = Vector2(703, 427)
+
+[node name="Vase_A2" parent="rompibles" instance=ExtResource("4_uj1e3")]
+position = Vector2(737, 325)
+
+[node name="Vase_A3" parent="rompibles" instance=ExtResource("4_uj1e3")]
+position = Vector2(547, 262)
+
+[node name="Vase_A4" parent="rompibles" instance=ExtResource("4_uj1e3")]
+position = Vector2(384, 228)
+
+[node name="Vase_A5" parent="rompibles" instance=ExtResource("4_uj1e3")]
+position = Vector2(417, 357)
