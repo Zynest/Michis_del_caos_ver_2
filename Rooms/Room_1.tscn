@@ -929,10 +929,14 @@ position = Vector2(393, 257)
 script = ExtResource("3_dyehu")
 
 [node name="HudLabel" type="Label" parent="UI"]
-offset_left = 282.0
-offset_top = 143.0
-offset_right = 394.0
-offset_bottom = 166.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -56.0
+offset_top = 82.0
+offset_right = 56.0
+offset_bottom = 105.0
+grow_horizontal = 2
 
 [node name="5peso" parent="." instance=ExtResource("5_5nhsa")]
 position = Vector2(693, 440)
