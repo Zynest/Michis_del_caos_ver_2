@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkmddb1v3jgvv"]
+
+[ext_resource type="PackedScene" uid="uid://bka8vtlrrbngn" path="res://Rooms/background.tscn" id="1_h23nj"]
+[ext_resource type="Texture2D" uid="uid://dbrpfpo5gxi3" path="res://beds_BR.png" id="2_h23nj"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h23nj"]
+texture = ExtResource("2_h23nj")
+margins = Vector2i(0, 20)
+texture_region_size = Vector2i(64, 64)
+use_texture_padding = false
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_rm822"]
+tile_size = Vector2i(64, 64)
+sources/1 = SubResource("TileSetAtlasSource_h23nj")
+
+[node name="Node" instance=ExtResource("1_h23nj")]
+
+[node name="TextureRect" parent="." index="0"]
+visible = true
+
+[node name="TileMapLayer" parent="." index="1"]
+tile_map_data = PackedByteArray()
+tile_set = SubResource("TileSet_rm822")

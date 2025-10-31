@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgpec1drphpco"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xonv"]
+
+[node name="Plataforma" type="StaticBody2D"]
+scale = Vector2(37.347004, -9.591958)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(18.073738, -36.59315)
+scale = Vector2(-0.22547013, -0.112585366)
+shape = SubResource("RectangleShape2D_3xonv")
+one_way_collision = true

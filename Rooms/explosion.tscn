@@ -1,0 +1,79 @@
+[gd_scene load_steps=12 format=3 uid="uid://csijhsj1xb57i"]
+
+[ext_resource type="Texture2D" uid="uid://bc4gueylinyi2" path="res://assets/Explosión-Sheet.png" id="1_nao83"]
+[ext_resource type="Script" uid="uid://dxvxkrlr6ad0d" path="res://Scripts/explosion.gd" id="2_v1n1r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1n1r"]
+atlas = ExtResource("1_nao83")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kht04"]
+atlas = ExtResource("1_nao83")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xmobt"]
+atlas = ExtResource("1_nao83")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yphws"]
+atlas = ExtResource("1_nao83")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35mc6"]
+atlas = ExtResource("1_nao83")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oivql"]
+atlas = ExtResource("1_nao83")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bqvb7"]
+atlas = ExtResource("1_nao83")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imw8w"]
+atlas = ExtResource("1_nao83")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_motbq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v1n1r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kht04")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xmobt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yphws")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35mc6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oivql")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bqvb7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_imw8w")
+}],
+"loop": true,
+"name": &"Explosion",
+"speed": 10.0
+}]
+
+[node name="Explosión" type="AnimatedSprite2D"]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_motbq")
+animation = &"Explosion"
+autoplay = "Explosion"
+frame = 6
+frame_progress = 0.7726749
+script = ExtResource("2_v1n1r")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]

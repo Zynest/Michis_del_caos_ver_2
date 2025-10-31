@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://u62vy0dxmnsp"]
+
+[ext_resource type="Script" uid="uid://cakqibula5j2p" path="res://Scripts/pantalla_de_perder.gd" id="1_cs0vs"]
+
+[node name="Pantalla_perder" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_cs0vs")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(28.72, 16.359997)
+color = Color(0.4094762, 0.14082968, 0.023351356, 1)
+
+[node name="GameOver" type="Label" parent="."]
+layout_mode = 0
+offset_left = 524.0
+offset_top = 347.0
+offset_right = 626.0
+offset_bottom = 370.0
+text = "Perdistes bot"
+
+[node name="Restart_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 385.0
+offset_right = 611.0
+offset_bottom = 416.0
+text = "Reiniciar"
+
+[connection signal="pressed" from="Restart_button" to="." method="_on_restart_button_pressed"]
