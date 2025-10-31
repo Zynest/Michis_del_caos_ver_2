@@ -48,6 +48,6 @@ offset_right = 38.0
 offset_bottom = -246.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "Reiniciar"
+text = "Jugar de nuevo"
 
 [connection signal="pressed" from="Restart_button" to="." method="_on_restart_button_pressed"]

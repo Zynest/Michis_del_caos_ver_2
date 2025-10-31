@@ -1,13 +1,13 @@
 extends Node
 
 var score = 0
-var time_left = 5
+var time_left = 20.0
 var target_score = 0
 var is_game_over = false
 
 func reset():
 	score = 0
-	time_left = 5
+	time_left = 20.0
 	is_game_over = false
 
 func add_score(v:int) -> void:
