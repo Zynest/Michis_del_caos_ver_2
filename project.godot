@@ -15,6 +15,10 @@ run/main_scene="uid://bk6xqg1myd4rb"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="uid://mv7v0mm77048"
 
+[audio]
+
+buses/default_bus_layout="res://prueba.tres"
+
 [autoload]
 
 Game="*res://Scripts/Game.gd"
