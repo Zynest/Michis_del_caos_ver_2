@@ -3718,8 +3718,7 @@ scale = Vector2(2, 2)
 script = ExtResource("3_dyehu")
 
 [node name="Reloj" type="Sprite2D" parent="UI"]
-visible = false
-position = Vector2(207, 105)
+position = Vector2(625, 110)
 scale = Vector2(2, 2)
 texture = ExtResource("4_e521h")
 
@@ -3732,6 +3731,7 @@ offset_top = 98.0
 offset_right = 56.0
 offset_bottom = 129.0
 grow_horizontal = 2
+size_flags_horizontal = 4
 theme_override_colors/font_color = Color(1, 0.023529412, 0, 1)
 theme_override_fonts/font = ExtResource("4_jtj7u")
 theme_override_font_sizes/font_size = 30
