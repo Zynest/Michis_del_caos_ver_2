@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://c655uehci625"]
+
+[ext_resource type="Script" uid="uid://d2rsrkuscwg03" path="res://Scripts/Breakable.gd" id="1_frwq8"]
+[ext_resource type="Texture2D" uid="uid://cbcdrnwn56ywb" path="res://assets/copa_mundial.png" id="1_kbm24"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_frwq8"]
+
+[node name="Objeto_1" type="RigidBody2D" groups=["Breakable"]]
+script = ExtResource("1_frwq8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.11875, 0.11875)
+texture = ExtResource("1_kbm24")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.8640062, 1.8640062)
+shape = SubResource("RectangleShape2D_frwq8")

@@ -11,8 +11,8 @@ func reset():
 	is_game_over = false
 	get_tree().paused = false
 
-func add_score(v:int) -> void:
-	score += v
+func add_score(x:int) -> void:
+	score += x
 	if score >= target_score and not is_game_over:
 		is_game_over = true
 		await get_tree().process_frame
@@ -22,7 +22,7 @@ func add_score(v:int) -> void:
 
 func _process(delta):
 	if is_game_over:
-		return # no se ejecuta lo de abajo si es true
+		return
 	time_left -= delta
 	if time_left <= 0:
 		game_over()
