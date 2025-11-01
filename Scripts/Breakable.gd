@@ -1,5 +1,6 @@
 extends RigidBody2D
 @export var score_value = 100
+#Importo escena de explosión.
 @export var explosion_scene: PackedScene = preload("res://Rooms/explosion.tscn")
 
 func _on_body_entered(body: Node) -> void:

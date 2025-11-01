@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dpmo1wq5rmufm"]
+[gd_scene load_steps=5 format=3 uid="uid://dpmo1wq5rmufm"]
 
 [ext_resource type="Script" uid="uid://c5arh078npgy3" path="res://Scripts/pantalla_de_ganar.gd" id="1_xfx4y"]
 [ext_resource type="FontFile" uid="uid://54l50lk1kjsu" path="res://assets/Minecraft.ttf" id="2_a3vat"]
 [ext_resource type="Texture2D" uid="uid://dg5bftpf1sl2d" path="res://assets/Nadie puede bañarse dos veces en el mismo río.png" id="2_aq1i5"]
+[ext_resource type="PackedScene" uid="uid://cx7krlfn3kn1a" path="res://Rooms/stuned_gato.tscn" id="4_0womr"]
 
 [node name="Pantalla_de_ganar" type="Control"]
 layout_mode = 3
@@ -55,7 +56,12 @@ theme_override_fonts/font = ExtResource("2_a3vat")
 text = "Jugar de nuevo"
 
 [node name="NadiePuedeBañarseDosVecesEnElMismoRío" type="Sprite2D" parent="."]
-position = Vector2(164, 485)
+position = Vector2(990, 485)
 texture = ExtResource("2_aq1i5")
+flip_h = true
+
+[node name="gatete" parent="." instance=ExtResource("4_0womr")]
+position = Vector2(129.00002, 488)
+scale = Vector2(10, 10)
 
 [connection signal="pressed" from="Restart_button" to="." method="_on_restart_button_pressed"]

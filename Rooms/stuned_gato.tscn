@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://cx7krlfn3kn1a"]
+
+[ext_resource type="Texture2D" uid="uid://heg67u4v38h8" path="res://assets/stuned-Sheet.png" id="1_kqgp6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xefo"]
+atlas = ExtResource("1_kqgp6")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12phj"]
+atlas = ExtResource("1_kqgp6")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fam2g"]
+atlas = ExtResource("1_kqgp6")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cgfny"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3xefo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12phj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fam2g")
+}],
+"loop": true,
+"name": &"stuned_cat",
+"speed": 5.0
+}]
+
+[node name="gatete" type="AnimatedSprite2D"]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_cgfny")
+animation = &"stuned_cat"
+autoplay = "stuned_cat"
+frame_progress = 0.7769487
