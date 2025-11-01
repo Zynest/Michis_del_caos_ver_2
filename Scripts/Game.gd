@@ -1,13 +1,16 @@
 extends Node
 
 var score = 0
-var time_left = 20.0
+var time_left = 21
 var target_score = 0
 var is_game_over = false
 
+func _ready() -> void:
+	get_tree().paused = true
+
 func reset():
 	score = 0
-	time_left = 20.0
+	time_left = 21
 	is_game_over = false
 	get_tree().paused = false
 
