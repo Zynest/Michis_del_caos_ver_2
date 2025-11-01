@@ -15,3 +15,6 @@ thumbs.db
 # Carpetas del editor o builds
 build/
 bin/
+
+# Export HTML para itch.io
+/out/
