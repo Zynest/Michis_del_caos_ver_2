@@ -61,7 +61,7 @@ texture = ExtResource("2_aq1i5")
 flip_h = true
 
 [node name="gatete" parent="." instance=ExtResource("4_0womr")]
-position = Vector2(129.00002, 488)
+position = Vector2(129, 488)
 scale = Vector2(10, 10)
 
 [connection signal="pressed" from="Restart_button" to="." method="_on_restart_button_pressed"]

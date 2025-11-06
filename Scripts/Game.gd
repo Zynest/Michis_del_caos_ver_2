@@ -18,7 +18,7 @@ func add_score(x:int) -> void:
 	score += x
 	if score >= target_score and not is_game_over:
 		is_game_over = true
-		await get_tree().process_frame
+		await get_tree().create_timer(0.5).timeout
 		get_tree().change_scene_to_file("res://Rooms/pantalla_de_ganar.tscn")
 		await get_tree().process_frame
 		get_tree().paused = true
