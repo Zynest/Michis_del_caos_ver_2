@@ -1,16 +1,15 @@
-[gd_scene load_steps=56 format=4 uid="uid://d03vnhsuhjelp"]
+[gd_scene load_steps=54 format=4 uid="uid://d03vnhsuhjelp"]
 
 [ext_resource type="PackedScene" uid="uid://3spfmc6o88v5" path="res://Rooms/gato.tscn" id="1_gq8um"]
 [ext_resource type="Script" uid="uid://dvnbccg6ogobc" path="res://Scripts/room_1.gd" id="1_hm3dd"]
 [ext_resource type="Script" uid="uid://b37yovqigrt31" path="res://Scripts/UI2D.gd" id="3_dyehu"]
-[ext_resource type="Texture2D" uid="uid://bx62v5esw3gji" path="res://assets/reloj.png" id="4_e521h"]
 [ext_resource type="FontFile" uid="uid://54l50lk1kjsu" path="res://assets/Minecraft.ttf" id="4_jtj7u"]
 [ext_resource type="PackedScene" uid="uid://u67xakh8emck" path="res://Rooms/Vase_A.tscn" id="4_uj1e3"]
 [ext_resource type="PackedScene" uid="uid://dckekrq2nwq1a" path="res://Rooms/5_peso.tscn" id="5_5nhsa"]
 [ext_resource type="Texture2D" uid="uid://dtiebnbnp5svr" path="res://assets/cabinets_BA.png" id="9_hkrhj"]
 [ext_resource type="Texture2D" uid="uid://bifa4h2y15y35" path="res://assets/tile_floor.png" id="9_v0v6w"]
 [ext_resource type="Texture2D" uid="uid://cwiqo38q5pgmw" path="res://assets/TopDownHouse_FloorsAndWalls.png" id="9_xvag3"]
-[ext_resource type="AudioStream" uid="uid://bw22nie4g1rop" path="res://Sound/explosion.wav" id="9_ys5yx"]
+[ext_resource type="AudioStream" uid="uid://bw22nie4g1rop" path="res://assets/explosion.wav" id="9_ys5yx"]
 [ext_resource type="Texture2D" uid="uid://d1rqxf43782fj" path="res://assets/floorswalls_LRK.png" id="10_c4j1s"]
 [ext_resource type="Texture2D" uid="uid://b30i233cpki1x" path="res://assets/wardrobes_BR.png" id="10_hkrhj"]
 [ext_resource type="Texture2D" uid="uid://b0ry6kdq3vdbx" path="res://assets/cabinets_LRK.png" id="10_nxc54"]
@@ -26,7 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://cbcdrnwn56ywb" path="res://assets/copa_mundial.png" id="20_nm3s4"]
 [ext_resource type="Texture2D" uid="uid://mxqgkpse8h6m" path="res://assets/lamp.png" id="23_bm4s0"]
 [ext_resource type="Texture2D" uid="uid://caaec034ufi0o" path="res://assets/pescaito.png" id="25_mvwb6"]
-[ext_resource type="Texture2D" uid="uid://dxsleajf6q16g" path="res://assets/icon.svg" id="27_ds380"]
+[ext_resource type="PackedScene" uid="uid://dngd8bsyjrf0i" path="res://Rooms/item_debuff.tscn" id="27_ds380"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hkrhj"]
 size = Vector2(1750, 20)
@@ -3700,9 +3699,6 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_dfs67")
 sources/1 = SubResource("TileSetAtlasSource_jtj7u")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_e47sc"]
-size = Vector2(34, 28)
-
 [node name="Room1" type="Node2D"]
 script = ExtResource("1_hm3dd")
 
@@ -3721,12 +3717,6 @@ scale = Vector2(2, 2)
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("3_dyehu")
-
-[node name="Reloj" type="Sprite2D" parent="UI"]
-visible = false
-position = Vector2(625, 110)
-scale = Vector2(2, 2)
-texture = ExtResource("4_e521h")
 
 [node name="HudLabel" type="Label" parent="UI"]
 anchors_preset = 5
@@ -3877,19 +3867,14 @@ metadata/_edit_lock_ = true
 stream = ExtResource("9_ys5yx")
 volume_db = 6.0
 
-[node name="ItemDebuff" type="StaticBody2D" parent="."]
-position = Vector2(837, 376)
-metadata/_edit_group_ = true
+[node name="Tiempo" parent="." groups=["Buff"] instance=ExtResource("27_ds380")]
+position = Vector2(848, 359)
 
-[node name="Icon" type="Sprite2D" parent="ItemDebuff"]
-position = Vector2(9, -13)
-scale = Vector2(0.199219, 0.199219)
-texture = ExtResource("27_ds380")
+[node name="Tiempo2" parent="." groups=["Buff"] instance=ExtResource("27_ds380")]
+position = Vector2(494, 264)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ItemDebuff"]
-position = Vector2(9, -14)
-shape = SubResource("RectangleShape2D_e47sc")
-disabled = true
+[node name="Tiempo3" parent="." groups=["Buff"] instance=ExtResource("27_ds380")]
+position = Vector2(396, 359)
 
 [editable path="rompibles/Patito"]
 [editable path="rompibles/Planta"]

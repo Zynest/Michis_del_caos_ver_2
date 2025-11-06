@@ -4,9 +4,6 @@ extends RigidBody2D
 @export var explosion_scene: PackedScene = preload("res://Rooms/explosion.tscn")
 @onready var sound_explision: AudioStreamPlayer2D = $"../../Sound_Explision"
 
-
-
-
 func _on_body_entered(body: Node) -> void:
 	if body.is_in_group("Ground"):
 		sound_explision.play()

@@ -27,6 +27,8 @@ Game="*res://Scripts/Game.gd"
 
 Breakable=""
 Ground=""
+Buff=""
+Nerf=""
 
 [input]
 

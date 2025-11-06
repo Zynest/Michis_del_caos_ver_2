@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dngd8bsyjrf0i"]
+
+[ext_resource type="Script" uid="uid://0iaqt8lib1x3" path="res://Scripts/item_debuff.gd" id="1_fuyvt"]
+[ext_resource type="Texture2D" uid="uid://bx62v5esw3gji" path="res://assets/reloj.png" id="2_fuyvt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fuyvt"]
+radius = 14.3178215
+
+[node name="ItemDebuff" type="Area2D"]
+script = ExtResource("1_fuyvt")
+
+[node name="Icon" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_fuyvt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("CircleShape2D_fuyvt")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

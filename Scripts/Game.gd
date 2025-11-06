@@ -1,7 +1,7 @@
 extends Node
 
 var score = 0
-var time_left = 21
+var time_left = 11
 var target_score = 0
 var is_game_over = false
 
@@ -10,7 +10,7 @@ func _ready() -> void:
 
 func reset():
 	score = 0
-	time_left = 21
+	time_left = 11
 	is_game_over = false
 	get_tree().paused = false
 
@@ -18,7 +18,7 @@ func add_score(x:int) -> void:
 	score += x
 	if score >= target_score and not is_game_over:
 		is_game_over = true
-		await get_tree().process_frame
+		await get_tree().create_timer(0.6).timeout
 		get_tree().change_scene_to_file("res://Rooms/pantalla_de_ganar.tscn")
 		await get_tree().process_frame
 		get_tree().paused = true
