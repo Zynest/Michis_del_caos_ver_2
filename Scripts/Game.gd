@@ -32,9 +32,7 @@ func _process(delta):
 
 func game_over():
 	is_game_over = true
-	#await get_tree().process_frame
 	get_tree().change_scene_to_file("res://Rooms/pantalla_de_perder.tscn")
-	#await get_tree().process_frame
 	get_tree().paused = true
 
 func restart_game() -> void:
