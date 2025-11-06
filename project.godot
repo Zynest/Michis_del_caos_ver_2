@@ -27,8 +27,6 @@ Game="*res://Scripts/Game.gd"
 
 Breakable=""
 Ground=""
-Nerfs="le agrega dificultad al player"
-"Power ups"="le da ventajas al prayer"
 
 [input]
 
