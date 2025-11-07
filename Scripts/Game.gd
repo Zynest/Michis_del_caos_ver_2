@@ -32,6 +32,7 @@ func _process(delta):
 
 func game_over():
 	is_game_over = true
+	await get_tree().create_timer(0.6).timeout
 	get_tree().change_scene_to_file("res://Rooms/pantalla_de_perder.tscn")
 	get_tree().paused = true
 

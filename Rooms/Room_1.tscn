@@ -3763,12 +3763,24 @@ position = Vector2(176, 464)
 scale = Vector2(0.327807, 4.88997)
 
 [node name="StaticBody2D9" parent="collisiones" instance=ExtResource("17_dfs67")]
-position = Vector2(400, 508)
-scale = Vector2(0.68, 1.04)
+position = Vector2(368, 465)
+scale = Vector2(-0.30934304, 4.923278)
 
 [node name="StaticBody2D10" parent="collisiones" instance=ExtResource("17_dfs67")]
 position = Vector2(528, 480)
 scale = Vector2(1.04, 3.28)
+
+[node name="StaticBody2D14" parent="collisiones" instance=ExtResource("17_dfs67")]
+position = Vector2(240, 171)
+
+[node name="StaticBody2D13" parent="collisiones" instance=ExtResource("17_dfs67")]
+position = Vector2(848, 139)
+
+[node name="StaticBody2D12" parent="collisiones" instance=ExtResource("17_dfs67")]
+position = Vector2(656, 203)
+
+[node name="StaticBody2D11" parent="collisiones" instance=ExtResource("17_dfs67")]
+position = Vector2(880, 267)
 
 [node name="rompibles" type="Node" parent="."]
 
@@ -3784,7 +3796,7 @@ position = Vector2(-1, 1)
 shape = SubResource("RectangleShape2D_mvwb6")
 
 [node name="Planta" parent="rompibles" instance=ExtResource("4_uj1e3")]
-position = Vector2(722, 308)
+position = Vector2(657, 149)
 
 [node name="Sprite2D" parent="rompibles/Planta" index="0"]
 scale = Vector2(2, 2)
@@ -3795,7 +3807,7 @@ position = Vector2(-0.5, 2)
 shape = SubResource("CapsuleShape2D_ds380")
 
 [node name="Copa" parent="rompibles" instance=ExtResource("4_uj1e3")]
-position = Vector2(529, 242)
+position = Vector2(848, 96)
 
 [node name="Sprite2D" parent="rompibles/Copa" index="0"]
 scale = Vector2(0.15, 0.15)
@@ -3806,7 +3818,7 @@ position = Vector2(-1, 1)
 shape = SubResource("CapsuleShape2D_ys5yx")
 
 [node name="Lampara" parent="rompibles" instance=ExtResource("4_uj1e3")]
-position = Vector2(369, 209)
+position = Vector2(720, 311)
 
 [node name="Sprite2D" parent="rompibles/Lampara" index="0"]
 scale = Vector2(2, 2)
@@ -3817,7 +3829,7 @@ position = Vector2(-1, 0.999985)
 shape = SubResource("CapsuleShape2D_mvwb6")
 
 [node name="Pecesito" parent="rompibles" instance=ExtResource("4_uj1e3")]
-position = Vector2(432, 357)
+position = Vector2(372, 230)
 
 [node name="Sprite2D" parent="rompibles/Pecesito" index="0"]
 scale = Vector2(2, 2)
@@ -3839,14 +3851,14 @@ metadata/_edit_lock_ = true
 [node name="Muebles" type="TileMapLayer" parent="fondo"]
 z_index = -2
 scale = Vector2(2, 2)
-tile_map_data = PackedByteArray("AAAIAA0AAAACAAMAAAAIAA4AAAACAAQAAAAIAA8AAAACAAUAAAAJAA0AAAADAAMAAAAJAA4AAAADAAQAAAAJAA8AAAADAAUAAAAHAAwAAAABAAIAAAAHAA0AAAABAAMAAAAHAA4AAAABAAQAAAAHAA8AAAABAAUAAAAIAAwAAAACAAIAAAAJAAwAAAADAAIAAAAZAA0AAAABAAMAAAAZAA4AAAABAAQAAAAZAA8AAAABAAUAAAAaAA0AAAACAAMAAAAaAA4AAAACAAQAAAAaAA8AAAACAAUAAAAZAAwAAAABAAIAAAAaAAwAAAACAAIAAAAbAAwAAAADAAIAAAAbAA0AAAADAAMAAAAbAA4AAAADAAQAAAAbAA8AAAADAAUAAAAFAA0AAQAGAAEAAAAFAA4AAQAGAAIAAAAFAA8AAQAGAAMAAAALAA8AAAABABEAAAALABAAAAABABIAAAAMAA8AAAACABEAAAAMABAAAAACABIAAAANAA8AAAADABEAAAANABAAAAADABIAAAAPAA8ABwASAAsAAAAQAA8ABwATAAsAAAARAA8ABwAUAAsAAAAPAA4ABwASAAoAAAAQAA4ABwATAAoAAAARAA4ABwAUAAoAAAAKAAgAAgArAAIAAAALAAgAAgAsAAIAAAAMAAgAAgAtAAIAAAAPAAkAAgArAAoAAAAQAAkAAgAsAAoAAAARAAkAAgAtAAoAAAAVAAsAAgArAAoAAAAWAAsAAgAsAAoAAAAXAAsAAgAtAAoAAAAUAA4AAgArAAoAAAAVAA4AAgAsAAoAAAAWAA4AAgAtAAoAAAAMAAwAAgArAAIAAAANAAwAAgAsAAIAAAAOAAwAAgAtAAIAAAA=")
+tile_map_data = PackedByteArray("AAAIAA0AAAACAAMAAAAIAA4AAAACAAQAAAAIAA8AAAACAAUAAAAJAA0AAAADAAMAAAAJAA4AAAADAAQAAAAJAA8AAAADAAUAAAAHAAwAAAABAAIAAAAHAA0AAAABAAMAAAAHAA4AAAABAAQAAAAHAA8AAAABAAUAAAAIAAwAAAACAAIAAAAJAAwAAAADAAIAAAAZAA0AAAABAAMAAAAZAA4AAAABAAQAAAAZAA8AAAABAAUAAAAaAA0AAAACAAMAAAAaAA4AAAACAAQAAAAaAA8AAAACAAUAAAAZAAwAAAABAAIAAAAaAAwAAAACAAIAAAAbAAwAAAADAAIAAAAbAA0AAAADAAMAAAAbAA4AAAADAAQAAAAbAA8AAAADAAUAAAAFAA0AAQAGAAEAAAAFAA4AAQAGAAIAAAAFAA8AAQAGAAMAAAAPAA8ABwASAAsAAAAQAA8ABwATAAsAAAARAA8ABwAUAAsAAAAPAA4ABwASAAoAAAAQAA4ABwATAAoAAAARAA4ABwAUAAoAAAAKAAgAAgArAAIAAAALAAgAAgAsAAIAAAAMAAgAAgAtAAIAAAAPAAkAAgArAAoAAAAQAAkAAgAsAAoAAAARAAkAAgAtAAoAAAAVAAsAAgArAAoAAAAWAAsAAgAsAAoAAAAXAAsAAgAtAAoAAAAUAA4AAgArAAoAAAAVAA4AAgAsAAoAAAAWAA4AAgAtAAoAAAAMAAwAAgArAAIAAAANAAwAAgAsAAIAAAAOAAwAAgAtAAIAAAAZAAQAAgArAAoAAAAaAAQAAgAsAAoAAAAbAAQAAgAtAAoAAAATAAYAAgArAAoAAAAUAAYAAgAsAAoAAAAVAAYAAgAtAAoAAAAGAAUAAgArAAIAAAAHAAUAAgAsAAIAAAAIAAUAAgAtAAIAAAALAA0AAQAIAAEAAAALAA4AAQAIAAIAAAALAA8AAQAIAAMAAAAaAAgAAgArAAIAAAAbAAgAAgAsAAIAAAAcAAgAAgAtAAIAAAA=")
 tile_set = SubResource("TileSet_c4j1s")
 metadata/_edit_lock_ = true
 
 [node name="Decoraciones" type="TileMapLayer" parent="fondo"]
 z_index = -1
 scale = Vector2(2, 2)
-tile_map_data = PackedByteArray("AAAXAAYAAAAIAAEAAAAXAAcAAAAIAAIAAAAYAAYAAAAJAAEAAAAYAAcAAAAJAAIAAAAZAAYAAAAKAAEAAAAZAAcAAAAKAAIAAAAHAAkAAQANAAMAAAAHAAoAAQANAAQAAAAIAAkAAQAOAAMAAAAIAAoAAQAOAAQAAAAJAAkAAQAPAAMAAAAJAAoAAQAPAAQAAAAbAAkAAQANAAMAAAAbAAoAAQANAAQAAAAcAAkAAQAOAAMAAAAcAAoAAQAOAAQAAAAdAAkAAQAPAAMAAAAdAAoAAQAPAAQAAAAdAAwAAQAHAAEAAAAdAA0AAQAHAAIAAAAdAA4AAQAHAAMAAAAeAAwAAQAIAAEAAAAeAA0AAQAIAAIAAAAeAA4AAQAIAAMAAAA=")
+tile_map_data = PackedByteArray("AAAXAAkAAAAIAAEAAAAXAAoAAAAIAAIAAAAYAAkAAAAJAAEAAAAYAAoAAAAJAAIAAAAZAAkAAAAKAAEAAAAZAAoAAAAKAAIAAAA=")
 tile_set = SubResource("TileSet_kikvh")
 metadata/_edit_lock_ = true
 
@@ -3865,15 +3877,15 @@ tile_set = SubResource("TileSet_jtj7u")
 metadata/_edit_lock_ = true
 
 [node name="Tiempo" parent="." groups=["Buff"] instance=ExtResource("27_ds380")]
-position = Vector2(848, 359)
+position = Vector2(239, 126)
 
 [node name="Tiempo2" parent="." groups=["Buff"] instance=ExtResource("27_ds380")]
-position = Vector2(494, 264)
+position = Vector2(879, 225)
 
 [node name="Tiempo3" parent="." groups=["Buff"] instance=ExtResource("27_ds380")]
-position = Vector2(396, 359)
+position = Vector2(429, 355)
 
-[node name="Sound" type="Node2D" parent="."]
+[node name="Sound" type="Node" parent="."]
 
 [node name="Sound_Explision" type="AudioStreamPlayer2D" parent="Sound"]
 stream = ExtResource("9_ys5yx")
