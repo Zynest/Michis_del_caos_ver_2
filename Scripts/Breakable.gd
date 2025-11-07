@@ -2,7 +2,7 @@ extends RigidBody2D
 @export var score_value = 100
 #Importo escena de explosión.
 @export var explosion_scene: PackedScene = preload("res://Rooms/explosion.tscn")
-@onready var sound_explision: AudioStreamPlayer2D = $"../../Sound_Explision"
+@onready var sound_explision: AudioStreamPlayer2D = $"../../Sound/Sound_Explision"
 
 func _on_body_entered(body: Node) -> void:
 	if body.is_in_group("Ground"):

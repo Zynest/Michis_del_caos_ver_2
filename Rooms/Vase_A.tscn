@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d2rsrkuscwg03" path="res://Scripts/Breakable.gd" id="1_bw2wg"]
 [ext_resource type="Texture2D" uid="uid://dxsleajf6q16g" path="res://assets/icon.svg" id="1_o3rr4"]
-[ext_resource type="AudioStream" uid="uid://bw22nie4g1rop" path="res://assets/explosion.wav" id="3_hr2hu"]
+[ext_resource type="AudioStream" uid="uid://bw22nie4g1rop" path="res://Sound/explosion.wav" id="3_hr2hu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bw2wg"]
 size = Vector2(22.532112, 21.802536)
