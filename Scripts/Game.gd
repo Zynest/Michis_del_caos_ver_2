@@ -4,6 +4,7 @@ var score = 0
 var time_left = 11
 var target_score = 0
 var is_game_over = false
+var last_level_path: String = ""
 
 func _ready() -> void:
 	get_tree().paused = true
