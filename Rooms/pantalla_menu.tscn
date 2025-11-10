@@ -1,12 +1,16 @@
-[gd_scene load_steps=24 format=4 uid="uid://bk6xqg1myd4rb"]
+[gd_scene load_steps=34 format=4 uid="uid://bk6xqg1myd4rb"]
 
 [ext_resource type="Script" uid="uid://dvtufdbwlauxn" path="res://Scripts/pantalla_menu.gd" id="1_f1jph"]
 [ext_resource type="Texture2D" uid="uid://blmo1jba6atv0" path="res://assets/floorswalls_LRK - copia-export.png" id="3_0jsmk"]
 [ext_resource type="Texture2D" uid="uid://cwiqo38q5pgmw" path="res://assets/TopDownHouse_FloorsAndWalls.png" id="3_a1ebd"]
 [ext_resource type="Texture2D" uid="uid://b30i233cpki1x" path="res://assets/wardrobes_BR.png" id="4_pcuk0"]
 [ext_resource type="Texture2D" uid="uid://cgqot8s1t2tug" path="res://assets/start_button1.png" id="5_0jsmk"]
+[ext_resource type="Texture2D" uid="uid://dqhjo687ms8et" path="res://assets/decorations_LRK.png" id="5_pcuk0"]
+[ext_resource type="Texture2D" uid="uid://dovnsomrnjgis" path="res://assets/doorswindowsstairs_LRK.png" id="6_3t4ut"]
 [ext_resource type="Texture2D" uid="uid://bi1n5rajmgfgb" path="res://assets/start_button_pressed.png" id="6_45wqa"]
+[ext_resource type="Texture2D" uid="uid://6l80p8ajhjnk" path="res://assets/decorations_BR.png" id="7_md42v"]
 [ext_resource type="Texture2D" uid="uid://dg5bftpf1sl2d" path="res://assets/Nadie puede bañarse dos veces en el mismo río.png" id="9_45wqa"]
+[ext_resource type="Texture2D" uid="uid://bx6epgtt4pnl2" path="res://assets/finger.png" id="11_45wqa"]
 [ext_resource type="Texture2D" uid="uid://oaj6v25gf6y4" path="res://assets/planta.png" id="13_cbhai"]
 [ext_resource type="Texture2D" uid="uid://djoatiobw4d6x" path="res://assets/zoomies_attack1.png" id="14_md42v"]
 [ext_resource type="Texture2D" uid="uid://clsqxqkqsybtk" path="res://assets/zoomies_attack2.png" id="15_1u4pg"]
@@ -949,8 +953,592 @@ texture = ExtResource("4_pcuk0")
 8:21/0 = 0
 4:4/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_md42v"]
+texture = ExtResource("5_pcuk0")
+3:0/0 = 0
+1:1/0 = 0
+3:1/0 = 0
+5:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+1:2/0 = 0
+3:2/0 = 0
+5:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+1:3/0 = 0
+3:3/0 = 0
+5:3/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+10:4/0 = 0
+1:5/0 = 0
+3:5/0 = 0
+5:5/0 = 0
+10:5/0 = 0
+1:6/0 = 0
+3:6/0 = 0
+5:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+10:6/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+1:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+10:8/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1u4pg"]
+texture = ExtResource("6_3t4ut")
+27:0/0 = 0
+28:0/0 = 0
+33:0/0 = 0
+34:0/0 = 0
+38:0/0 = 0
+39:0/0 = 0
+41:0/0 = 0
+42:0/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+22:1/0 = 0
+23:1/0 = 0
+24:1/0 = 0
+25:1/0 = 0
+27:1/0 = 0
+28:1/0 = 0
+29:1/0 = 0
+32:1/0 = 0
+33:1/0 = 0
+34:1/0 = 0
+37:1/0 = 0
+38:1/0 = 0
+39:1/0 = 0
+41:1/0 = 0
+42:1/0 = 0
+43:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+22:2/0 = 0
+23:2/0 = 0
+24:2/0 = 0
+25:2/0 = 0
+27:2/0 = 0
+28:2/0 = 0
+29:2/0 = 0
+30:2/0 = 0
+31:2/0 = 0
+32:2/0 = 0
+33:2/0 = 0
+34:2/0 = 0
+36:2/0 = 0
+37:2/0 = 0
+38:2/0 = 0
+39:2/0 = 0
+41:2/0 = 0
+42:2/0 = 0
+43:2/0 = 0
+44:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+22:3/0 = 0
+23:3/0 = 0
+24:3/0 = 0
+25:3/0 = 0
+27:3/0 = 0
+28:3/0 = 0
+29:3/0 = 0
+30:3/0 = 0
+31:3/0 = 0
+32:3/0 = 0
+33:3/0 = 0
+34:3/0 = 0
+36:3/0 = 0
+37:3/0 = 0
+38:3/0 = 0
+39:3/0 = 0
+41:3/0 = 0
+42:3/0 = 0
+43:3/0 = 0
+44:3/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+22:4/0 = 0
+23:4/0 = 0
+24:4/0 = 0
+25:4/0 = 0
+27:4/0 = 0
+28:4/0 = 0
+29:4/0 = 0
+30:4/0 = 0
+31:4/0 = 0
+32:4/0 = 0
+33:4/0 = 0
+34:4/0 = 0
+36:4/0 = 0
+37:4/0 = 0
+38:4/0 = 0
+39:4/0 = 0
+41:4/0 = 0
+42:4/0 = 0
+43:4/0 = 0
+44:4/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+22:5/0 = 0
+23:5/0 = 0
+24:5/0 = 0
+25:5/0 = 0
+27:5/0 = 0
+28:5/0 = 0
+33:5/0 = 0
+34:5/0 = 0
+38:5/0 = 0
+39:5/0 = 0
+41:5/0 = 0
+42:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+20:6/0 = 0
+22:6/0 = 0
+23:6/0 = 0
+24:6/0 = 0
+25:6/0 = 0
+27:6/0 = 0
+28:6/0 = 0
+29:6/0 = 0
+32:6/0 = 0
+33:6/0 = 0
+34:6/0 = 0
+37:6/0 = 0
+38:6/0 = 0
+39:6/0 = 0
+41:6/0 = 0
+42:6/0 = 0
+43:6/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+22:7/0 = 0
+23:7/0 = 0
+24:7/0 = 0
+25:7/0 = 0
+27:7/0 = 0
+28:7/0 = 0
+29:7/0 = 0
+30:7/0 = 0
+31:7/0 = 0
+32:7/0 = 0
+33:7/0 = 0
+34:7/0 = 0
+36:7/0 = 0
+37:7/0 = 0
+38:7/0 = 0
+39:7/0 = 0
+41:7/0 = 0
+42:7/0 = 0
+43:7/0 = 0
+44:7/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+22:8/0 = 0
+23:8/0 = 0
+24:8/0 = 0
+25:8/0 = 0
+27:8/0 = 0
+28:8/0 = 0
+29:8/0 = 0
+30:8/0 = 0
+31:8/0 = 0
+32:8/0 = 0
+33:8/0 = 0
+34:8/0 = 0
+36:8/0 = 0
+37:8/0 = 0
+38:8/0 = 0
+39:8/0 = 0
+41:8/0 = 0
+42:8/0 = 0
+43:8/0 = 0
+44:8/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+22:9/0 = 0
+23:9/0 = 0
+24:9/0 = 0
+25:9/0 = 0
+27:9/0 = 0
+28:9/0 = 0
+29:9/0 = 0
+30:9/0 = 0
+31:9/0 = 0
+32:9/0 = 0
+33:9/0 = 0
+34:9/0 = 0
+36:9/0 = 0
+37:9/0 = 0
+38:9/0 = 0
+39:9/0 = 0
+41:9/0 = 0
+42:9/0 = 0
+43:9/0 = 0
+44:9/0 = 0
+17:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+22:10/0 = 0
+23:10/0 = 0
+24:10/0 = 0
+25:10/0 = 0
+27:10/0 = 0
+28:10/0 = 0
+33:10/0 = 0
+34:10/0 = 0
+38:10/0 = 0
+39:10/0 = 0
+41:10/0 = 0
+42:10/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+13:11/0 = 0
+14:11/0 = 0
+15:11/0 = 0
+17:11/0 = 0
+18:11/0 = 0
+19:11/0 = 0
+20:11/0 = 0
+22:11/0 = 0
+23:11/0 = 0
+24:11/0 = 0
+25:11/0 = 0
+27:11/0 = 0
+28:11/0 = 0
+29:11/0 = 0
+32:11/0 = 0
+33:11/0 = 0
+34:11/0 = 0
+37:11/0 = 0
+38:11/0 = 0
+39:11/0 = 0
+41:11/0 = 0
+42:11/0 = 0
+43:11/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+13:12/0 = 0
+14:12/0 = 0
+15:12/0 = 0
+17:12/0 = 0
+18:12/0 = 0
+19:12/0 = 0
+20:12/0 = 0
+22:12/0 = 0
+23:12/0 = 0
+24:12/0 = 0
+25:12/0 = 0
+27:12/0 = 0
+28:12/0 = 0
+29:12/0 = 0
+30:12/0 = 0
+31:12/0 = 0
+32:12/0 = 0
+33:12/0 = 0
+34:12/0 = 0
+36:12/0 = 0
+37:12/0 = 0
+38:12/0 = 0
+39:12/0 = 0
+41:12/0 = 0
+42:12/0 = 0
+43:12/0 = 0
+44:12/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+10:13/0 = 0
+11:13/0 = 0
+13:13/0 = 0
+14:13/0 = 0
+15:13/0 = 0
+17:13/0 = 0
+18:13/0 = 0
+19:13/0 = 0
+20:13/0 = 0
+22:13/0 = 0
+23:13/0 = 0
+24:13/0 = 0
+25:13/0 = 0
+27:13/0 = 0
+28:13/0 = 0
+29:13/0 = 0
+30:13/0 = 0
+31:13/0 = 0
+32:13/0 = 0
+33:13/0 = 0
+34:13/0 = 0
+36:13/0 = 0
+37:13/0 = 0
+38:13/0 = 0
+39:13/0 = 0
+41:13/0 = 0
+42:13/0 = 0
+43:13/0 = 0
+44:13/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+13:14/0 = 0
+14:14/0 = 0
+15:14/0 = 0
+17:14/0 = 0
+18:14/0 = 0
+19:14/0 = 0
+20:14/0 = 0
+22:14/0 = 0
+23:14/0 = 0
+24:14/0 = 0
+25:14/0 = 0
+27:14/0 = 0
+28:14/0 = 0
+29:14/0 = 0
+30:14/0 = 0
+31:14/0 = 0
+32:14/0 = 0
+33:14/0 = 0
+34:14/0 = 0
+36:14/0 = 0
+37:14/0 = 0
+38:14/0 = 0
+39:14/0 = 0
+41:14/0 = 0
+42:14/0 = 0
+43:14/0 = 0
+44:14/0 = 0
+17:15/0 = 0
+18:15/0 = 0
+19:15/0 = 0
+20:15/0 = 0
+22:15/0 = 0
+23:15/0 = 0
+24:15/0 = 0
+25:15/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hlbr5"]
+texture = ExtResource("7_md42v")
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+6:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_md42v"]
 sources/0 = SubResource("TileSetAtlasSource_3t4ut")
+sources/1 = SubResource("TileSetAtlasSource_md42v")
+sources/2 = SubResource("TileSetAtlasSource_1u4pg")
+sources/3 = SubResource("TileSetAtlasSource_hlbr5")
+
+[sub_resource type="Animation" id="Animation_3t4ut"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(59, 487)]
+}
 
 [sub_resource type="Animation" id="Animation_cbhai"]
 resource_name = "gatinho"
@@ -969,25 +1557,25 @@ tracks/0/keys = {
 "values": [Vector2(-29, 487), Vector2(21, 487), Vector2(69, 487), Vector2(119, 487), Vector2(161, 487)]
 }
 
-[sub_resource type="Animation" id="Animation_3t4ut"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_md42v"]
+_data = {
+&"RESET": SubResource("Animation_3t4ut"),
+&"gatinho": SubResource("Animation_cbhai")
+}
+
+[sub_resource type="Animation" id="Animation_1u4pg"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
+tracks/0/path = NodePath(".:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(59, 487)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_md42v"]
-_data = {
-&"RESET": SubResource("Animation_3t4ut"),
-&"gatinho": SubResource("Animation_cbhai")
+"values": [0.0]
 }
 
 [sub_resource type="Animation" id="Animation_md42v"]
@@ -1005,21 +1593,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.18151425, -0.18325958, 0.18151425, 0.0, 0.18151425]
-}
-
-[sub_resource type="Animation" id="Animation_1u4pg"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hlbr5"]
@@ -1042,6 +1615,44 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_hlbr5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(333.00003, 478)]
+}
+
+[sub_resource type="Animation" id="Animation_pcuk0"]
+resource_name = "finger_animation"
+length = 0.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4920969),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(752, 567.00006), Vector2(698.0001, 508.00006)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o083k"]
+_data = {
+&"RESET": SubResource("Animation_hlbr5"),
+&"finger_animation": SubResource("Animation_pcuk0")
+}
+
 [node name="Pantalla_Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -1051,15 +1662,15 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_f1jph")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="Fondo" type="TileMapLayer" parent="."]
 scale = Vector2(4, 4)
-tile_map_data = PackedByteArray("AAAAAAAAAwAJAAEAAAAAAAEAAwAJAAIAAAAAAAIAAwAJAAIAAAAAAAMAAwAJAAIAAAAAAAQAAwAJAAIAAAAAAAUAAwAJAAIAAAAAAAYAAAALAAMAAAAAAAcAAAALAAQAAAAAAAgAAwAFAAUAAAAAAAkAAwAFAAYAAAAAAAoAAwAFAAcAAAABAAAAAwALAAEAAAABAAEAAwAKAAIAAAABAAIAAwAKAAIAAAABAAMAAwAKAAIAAAABAAQAAwAKAAIAAAABAAUAAwAKAAIAAAABAAYAAAAKAAMAAAABAAcAAAAKAAQAAAABAAgAAwAGAAUAAAABAAkAAwAGAAYAAAABAAoAAwAGAAcAAAACAAAAAwAKAAEAAAACAAEAAwALAAIAAAACAAIAAwALAAIAAAACAAMAAwALAAIAAAACAAQAAwALAAIAAAACAAUAAwALAAIAAAACAAYAAAALAAMAAAACAAcAAAALAAQAAAACAAgAAwAHAAUAAAACAAkAAwAHAAYAAAACAAoAAwAHAAcAAAADAAAAAwALAAEAAAADAAEAAwAKAAIAAAADAAIAAwAKAAIAAAADAAMAAwAKAAIAAAADAAQAAwAKAAIAAAADAAUAAwAKAAIAAAADAAYAAAAKAAMAAAADAAcAAAAKAAQAAAADAAgAAwAGAAUAAAADAAkAAwAGAAYAAAADAAoAAwAGAAcAAAAEAAAAAwAKAAEAAAAEAAEAAwALAAIAAAAEAAIAAwALAAIAAAAEAAMAAwALAAIAAAAEAAQAAwALAAIAAAAEAAUAAwAKAAMAAAAEAAYAAAALAAMAAAAEAAcAAAALAAQAAAAEAAgAAwAHAAUAAAAEAAkAAwAHAAYAAAAEAAoAAwAHAAcAAAAFAAAAAwALAAEAAAAFAAEAAwAKAAIAAAAFAAIAAwAKAAIAAAAFAAMAAwAKAAIAAAAFAAQAAwAKAAIAAAAFAAUAAwAKAAMAAAAFAAYAAAAKAAMAAAAFAAcAAAAKAAQAAAAFAAgAAwAGAAUAAAAFAAkAAwAGAAYAAAAFAAoAAwAGAAcAAAAGAAAAAwAKAAEAAAAGAAEAAwALAAIAAAAGAAIAAwALAAIAAAAGAAMAAwALAAIAAAAGAAQAAwALAAIAAAAGAAUAAwAKAAMAAAAGAAYAAAALAAMAAAAGAAcAAAALAAQAAAAGAAgAAwAGAAUAAAAGAAkAAwAHAAYAAAAGAAoAAwAHAAcAAAAHAAAAAwALAAEAAAAHAAEAAwAKAAIAAAAHAAIAAwAKAAIAAAAHAAMAAwAKAAIAAAAHAAQAAwAKAAIAAAAHAAUAAwAKAAMAAAAHAAYAAAAKAAMAAAAHAAcAAAAKAAQAAAAHAAgAAwAHAAUAAAAHAAkAAwAGAAYAAAAHAAoAAwAGAAcAAAAIAAAAAwAKAAEAAAAIAAEAAwALAAIAAAAIAAIAAwALAAIAAAAIAAMAAwALAAIAAAAIAAQAAwALAAIAAAAIAAUAAwAKAAMAAAAIAAYAAAALAAMAAAAIAAcAAAALAAQAAAAIAAgAAwAGAAUAAAAIAAkAAwAHAAYAAAAIAAoAAwAHAAcAAAAJAAAAAwALAAEAAAAJAAEAAwAKAAIAAAAJAAIAAwAKAAIAAAAJAAMAAwAKAAIAAAAJAAQAAwAKAAIAAAAJAAUAAwAKAAMAAAAJAAYAAAAKAAMAAAAJAAcAAAAKAAQAAAAJAAgAAwAHAAUAAAAJAAkAAwAGAAYAAAAJAAoAAwAGAAcAAAAKAAAAAwAKAAEAAAAKAAEAAwALAAIAAAAKAAIAAwALAAIAAAAKAAMAAwALAAIAAAAKAAQAAwALAAIAAAAKAAUAAwAKAAMAAAAKAAYAAAALAAMAAAAKAAcAAAALAAQAAAAKAAgAAwAGAAUAAAAKAAkAAwAHAAYAAAAKAAoAAwAHAAcAAAALAAAAAwALAAEAAAALAAEAAwAKAAIAAAALAAIAAwAKAAIAAAALAAMAAwAKAAIAAAALAAQAAwAKAAIAAAALAAUAAwAKAAIAAAALAAYAAAAKAAMAAAALAAcAAAAKAAQAAAALAAgAAwAGAAUAAAALAAkAAwAGAAYAAAALAAoAAwAGAAcAAAAMAAAAAwAKAAEAAAAMAAEAAwALAAIAAAAMAAIAAwALAAIAAAAMAAMAAwALAAIAAAAMAAQAAwALAAIAAAAMAAUAAwALAAIAAAAMAAYAAAAKAAMAAAAMAAcAAAAKAAQAAAAMAAgAAwAHAAUAAAAMAAkAAwAHAAYAAAAMAAoAAwAHAAcAAAANAAAAAwALAAEAAAANAAEAAwAKAAIAAAANAAIAAwAKAAIAAAANAAMAAwAKAAIAAAANAAQAAwAKAAIAAAANAAUAAwAKAAIAAAANAAYAAAAKAAMAAAANAAcAAAAKAAQAAAANAAgAAwAGAAUAAAANAAkAAwAGAAYAAAANAAoAAwAGAAcAAAAOAAAAAwAKAAEAAAAOAAEAAwALAAIAAAAOAAIAAwALAAIAAAAOAAMAAwALAAIAAAAOAAQAAwALAAIAAAAOAAUAAwAJAAIAAAAOAAYAAAALAAMAAAAOAAcAAAALAAQAAAAOAAgAAwAHAAUAAAAOAAkAAwAHAAYAAAAOAAoAAwAHAAcAAAAPAAAAAwALAAEAAAAPAAEAAwAKAAIAAAAPAAIAAwAKAAIAAAAPAAMAAwAKAAIAAAAPAAQAAwAKAAIAAAAPAAUAAwAKAAIAAAAPAAYAAAAKAAMAAAAPAAcAAAAKAAQAAAAPAAgAAwAIAAUAAAAPAAkAAwAGAAYAAAAPAAoAAwAGAAcAAAAQAAAAAwAKAAEAAAAQAAEAAwALAAIAAAAQAAIAAwALAAIAAAAQAAMAAwALAAIAAAAQAAQAAwALAAIAAAAQAAUAAwALAAIAAAAQAAYAAAALAAMAAAAQAAcAAAALAAQAAAAQAAgAAwAFAAUAAAAQAAkAAwAHAAYAAAAQAAoAAwAHAAcAAAARAAAAAwAMAAEAAAARAAEAAwAMAAIAAAARAAIAAwAMAAIAAAARAAMAAwAMAAIAAAARAAQAAwAMAAIAAAARAAUAAwAMAAIAAAARAAYAAAAKAAMAAAARAAcAAAAKAAQAAAARAAgAAwAGAAUAAAARAAkAAwAGAAYAAAARAAoAAwAGAAcAAAA=")
+tile_map_data = PackedByteArray("AAAAAAAAAwAJAAEAAAAAAAEAAwAJAAIAAAAAAAIAAwAJAAIAAAAAAAMAAwAJAAIAAAAAAAQAAwAJAAIAAAAAAAUAAwAJAAIAAAAAAAYAAAALAAMAAAAAAAcAAAALAAQAAAAAAAgAAwAFAAUAAAAAAAkAAwAFAAYAAAAAAAoAAwAFAAcAAAABAAAAAwALAAEAAAABAAEAAwAKAAIAAAABAAIAAwAKAAIAAAABAAMAAwAKAAIAAAABAAQAAwAKAAIAAAABAAUAAwAKAAIAAAABAAYAAAAKAAMAAAABAAcAAAAKAAQAAAABAAgAAwAGAAUAAAABAAkAAwAGAAYAAAABAAoAAwAGAAcAAAACAAAAAwAKAAEAAAACAAEAAwALAAIAAAACAAIAAwALAAIAAAACAAMAAwALAAIAAAACAAQAAwALAAIAAAACAAUAAwALAAIAAAACAAYAAAALAAMAAAACAAcAAAALAAQAAAACAAgAAwAHAAUAAAACAAkAAwAGAAYAAAACAAoAAwAHAAcAAAADAAAAAwALAAEAAAADAAEAAwAKAAIAAAADAAIAAwAKAAIAAAADAAMAAwAKAAIAAAADAAQAAwAKAAIAAAADAAUAAwAKAAIAAAADAAYAAAAKAAMAAAADAAcAAAAKAAQAAAADAAgAAwAGAAUAAAADAAkAAwAGAAYAAAADAAoAAwAGAAcAAAAEAAAAAwAKAAEAAAAEAAEAAwALAAIAAAAEAAIAAwALAAIAAAAEAAMAAwALAAIAAAAEAAQAAwALAAIAAAAEAAUAAwAKAAMAAAAEAAYAAAALAAMAAAAEAAcAAAALAAQAAAAEAAgAAwAHAAUAAAAEAAkAAwAHAAYAAAAEAAoAAwAHAAcAAAAFAAAAAwALAAEAAAAFAAEAAwAKAAIAAAAFAAIAAwAKAAIAAAAFAAMAAwAKAAIAAAAFAAQAAwAKAAIAAAAFAAUAAwAKAAMAAAAFAAYAAAAKAAMAAAAFAAcAAAAKAAQAAAAFAAgAAwAGAAUAAAAFAAkAAwAGAAYAAAAFAAoAAwAGAAcAAAAGAAAAAwAKAAEAAAAGAAEAAwALAAIAAAAGAAIAAwALAAIAAAAGAAMAAwALAAIAAAAGAAQAAwALAAIAAAAGAAUAAwAKAAMAAAAGAAYAAAALAAMAAAAGAAcAAAALAAQAAAAGAAgAAwAGAAUAAAAGAAkAAwAGAAYAAAAGAAoAAwAHAAcAAAAHAAAAAwALAAEAAAAHAAEAAwAKAAIAAAAHAAIAAwAKAAIAAAAHAAMAAwAKAAIAAAAHAAQAAwAKAAIAAAAHAAUAAwAKAAMAAAAHAAYAAAAKAAMAAAAHAAcAAAAKAAQAAAAHAAgAAwAHAAUAAAAHAAkAAwAGAAYAAAAHAAoAAwAGAAcAAAAIAAAAAwAKAAEAAAAIAAEAAwALAAIAAAAIAAIAAwALAAIAAAAIAAMAAwALAAIAAAAIAAQAAwALAAIAAAAIAAUAAwAKAAMAAAAIAAYAAAALAAMAAAAIAAcAAAALAAQAAAAIAAgAAwAGAAUAAAAIAAkAAwAHAAYAAAAIAAoAAwAHAAcAAAAJAAAAAwALAAEAAAAJAAEAAwAKAAIAAAAJAAIAAwAKAAIAAAAJAAMAAwAKAAIAAAAJAAQAAwAKAAIAAAAJAAUAAwAKAAMAAAAJAAYAAAAKAAMAAAAJAAcAAAAKAAQAAAAJAAgAAwAHAAUAAAAJAAkAAwAGAAYAAAAJAAoAAwAGAAcAAAAKAAAAAwAKAAEAAAAKAAEAAwALAAIAAAAKAAIAAwALAAIAAAAKAAMAAwALAAIAAAAKAAQAAwALAAIAAAAKAAUAAwAKAAMAAAAKAAYAAAALAAMAAAAKAAcAAAALAAQAAAAKAAgAAwAGAAUAAAAKAAkAAwAGAAYAAAAKAAoAAwAHAAcAAAALAAAAAwALAAEAAAALAAEAAwAKAAIAAAALAAIAAwAKAAIAAAALAAMAAwAKAAIAAAALAAQAAwAKAAIAAAALAAUAAwAKAAIAAAALAAYAAAAKAAMAAAALAAcAAAAKAAQAAAALAAgAAwAGAAUAAAALAAkAAwAGAAYAAAALAAoAAwAGAAcAAAAMAAAAAwAKAAEAAAAMAAEAAwALAAIAAAAMAAIAAwALAAIAAAAMAAMAAwALAAIAAAAMAAQAAwALAAIAAAAMAAUAAwALAAIAAAAMAAYAAAAKAAMAAAAMAAcAAAAKAAQAAAAMAAgAAwAHAAUAAAAMAAkAAwAHAAYAAAAMAAoAAwAHAAcAAAANAAAAAwALAAEAAAANAAEAAwAKAAIAAAANAAIAAwAKAAIAAAANAAMAAwAKAAIAAAANAAQAAwAKAAIAAAANAAUAAwAKAAIAAAANAAYAAAAKAAMAAAANAAcAAAAKAAQAAAANAAgAAwAGAAUAAAANAAkAAwAGAAYAAAANAAoAAwAGAAcAAAAOAAAAAwAKAAEAAAAOAAEAAwALAAIAAAAOAAIAAwALAAIAAAAOAAMAAwALAAIAAAAOAAQAAwALAAIAAAAOAAUAAwAJAAIAAAAOAAYAAAALAAMAAAAOAAcAAAALAAQAAAAOAAgAAwAHAAUAAAAOAAkAAwAHAAYAAAAOAAoAAwAHAAcAAAAPAAAAAwALAAEAAAAPAAEAAwAKAAIAAAAPAAIAAwAKAAIAAAAPAAMAAwAKAAIAAAAPAAQAAwAKAAIAAAAPAAUAAwAKAAIAAAAPAAYAAAAKAAMAAAAPAAcAAAAKAAQAAAAPAAgAAwAHAAUAAAAPAAkAAwAGAAYAAAAPAAoAAwAGAAcAAAAQAAAAAwAKAAEAAAAQAAEAAwALAAIAAAAQAAIAAwALAAIAAAAQAAMAAwALAAIAAAAQAAQAAwALAAIAAAAQAAUAAwALAAIAAAAQAAYAAAALAAMAAAAQAAcAAAALAAQAAAAQAAgAAwAHAAUAAAAQAAkAAwAGAAYAAAAQAAoAAwAHAAcAAAARAAAAAwAMAAEAAAARAAEAAwAMAAIAAAARAAIAAwAMAAIAAAARAAMAAwAMAAIAAAARAAQAAwAMAAIAAAARAAUAAwAMAAIAAAARAAYAAAAKAAMAAAARAAcAAAAKAAQAAAARAAgAAwAGAAUAAAARAAkAAwAGAAYAAAARAAoAAwAGAAcAAAA=")
 tile_set = SubResource("TileSet_cbhai")
 metadata/_edit_lock_ = true
 
-[node name="TileMap" type="TileMapLayer" parent="."]
+[node name="Deco" type="TileMapLayer" parent="."]
 scale = Vector2(4, 4)
-tile_map_data = PackedByteArray("AAAOAAUAAAABAAIAAAAOAAYAAAABAAMAAAAOAAcAAAABAAQAAAAOAAgAAAABAAUAAAAPAAUAAAACAAIAAAAPAAYAAAACAAMAAAAPAAcAAAACAAQAAAAPAAgAAAACAAUAAAAQAAUAAAADAAIAAAAQAAYAAAADAAMAAAAQAAcAAAADAAQAAAAQAAgAAAADAAUAAAA=")
+tile_map_data = PackedByteArray("AAAOAAUAAAABAAIAAAAOAAYAAAABAAMAAAAOAAcAAAABAAQAAAAOAAgAAAABAAUAAAAPAAUAAAACAAIAAAAPAAYAAAACAAMAAAAPAAcAAAACAAQAAAAPAAgAAAACAAUAAAAQAAUAAAADAAIAAAAQAAYAAAADAAMAAAAQAAcAAAADAAQAAAAQAAgAAAADAAUAAAABAAMAAwAIAAEAAAACAAMAAwAJAAEAAAADAAMAAwAKAAEAAAABAAQAAwAIAAIAAAACAAQAAwAJAAIAAAADAAQAAwAKAAIAAAA=")
 tile_set = SubResource("TileSet_md42v")
 metadata/_edit_lock_ = true
 
@@ -1080,35 +1691,50 @@ scale = Vector2(5, 5)
 texture_normal = ExtResource("5_0jsmk")
 texture_pressed = ExtResource("6_45wqa")
 
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+[node name="Animations" type="Node" parent="."]
+
+[node name="Gato" type="AnimationPlayer" parent="Animations"]
 root_node = NodePath("NadiePuedeBañarseDosVecesEnElMismoRío")
 libraries = {
 &"": SubResource("AnimationLibrary_md42v")
 }
 autoplay = "gatinho"
 
-[node name="NadiePuedeBañarseDosVecesEnElMismoRío" type="Sprite2D" parent="AnimationPlayer2"]
+[node name="NadiePuedeBañarseDosVecesEnElMismoRío" type="Sprite2D" parent="Animations/Gato"]
 position = Vector2(59, 487)
 texture = ExtResource("9_45wqa")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="Title" type="AnimationPlayer" parent="Animations"]
 root_node = NodePath("Sprite2D")
 libraries = {
 &"": SubResource("AnimationLibrary_hlbr5")
 }
 autoplay = "move"
 
-[node name="Sprite2D" type="Sprite2D" parent="AnimationPlayer"]
+[node name="Sprite2D" type="Sprite2D" parent="Animations/Title"]
 position = Vector2(990, 283)
 scale = Vector2(4, 4)
 texture = ExtResource("13_cbhai")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animations"]
 position = Vector2(601, 223)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_hlbr5")
 animation = &"title"
 autoplay = "title"
 frame_progress = 0.48524532
+
+[node name="Finger" type="AnimationPlayer" parent="Animations"]
+root_node = NodePath("Finger")
+libraries = {
+&"": SubResource("AnimationLibrary_o083k")
+}
+autoplay = "finger_animation"
+
+[node name="Finger" type="Sprite2D" parent="Animations/Finger"]
+position = Vector2(333.00003, 478)
+rotation = -2.316713
+scale = Vector2(3, 3)
+texture = ExtResource("11_45wqa")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]

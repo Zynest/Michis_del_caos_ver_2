@@ -1,9 +1,7 @@
-[gd_scene load_steps=56 format=4 uid="uid://d03vnhsuhjelp"]
+[gd_scene load_steps=55 format=4 uid="uid://d03vnhsuhjelp"]
 
 [ext_resource type="PackedScene" uid="uid://3spfmc6o88v5" path="res://Rooms/gato.tscn" id="1_gq8um"]
 [ext_resource type="Script" uid="uid://dvnbccg6ogobc" path="res://Scripts/room_1.gd" id="1_hm3dd"]
-[ext_resource type="Script" uid="uid://b37yovqigrt31" path="res://Scripts/UI2D.gd" id="3_dyehu"]
-[ext_resource type="FontFile" uid="uid://54l50lk1kjsu" path="res://assets/Minecraft.ttf" id="4_jtj7u"]
 [ext_resource type="PackedScene" uid="uid://u67xakh8emck" path="res://Rooms/Vase_A.tscn" id="4_uj1e3"]
 [ext_resource type="PackedScene" uid="uid://dckekrq2nwq1a" path="res://Rooms/5_peso.tscn" id="5_5nhsa"]
 [ext_resource type="Texture2D" uid="uid://dtiebnbnp5svr" path="res://assets/cabinets_BA.png" id="9_hkrhj"]
@@ -27,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://caaec034ufi0o" path="res://assets/pescaito.png" id="25_mvwb6"]
 [ext_resource type="PackedScene" uid="uid://dngd8bsyjrf0i" path="res://Rooms/item_debuff.tscn" id="27_ds380"]
 [ext_resource type="AudioStream" uid="uid://csyuyy7mmg0bt" path="res://Sound/Pickup_time.wav" id="27_e47sc"]
+[ext_resource type="PackedScene" uid="uid://ca1lpddh561gm" path="res://Rooms/stats.tscn" id="28_e47sc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hkrhj"]
 size = Vector2(1750, 20)
@@ -3711,23 +3710,6 @@ shape = SubResource("RectangleShape2D_hkrhj")
 position = Vector2(525, 413)
 scale = Vector2(2, 2)
 
-[node name="UI" type="CanvasLayer" parent="."]
-script = ExtResource("3_dyehu")
-
-[node name="HudLabel" type="Label" parent="UI"]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -56.0
-offset_top = 63.0
-offset_right = 56.0
-offset_bottom = 94.0
-grow_horizontal = 2
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(1, 0.0235294, 0, 1)
-theme_override_fonts/font = ExtResource("4_jtj7u")
-theme_override_font_sizes/font_size = 30
-
 [node name="collisiones" type="Node" parent="."]
 
 [node name="StaticBody2D" parent="collisiones" instance=ExtResource("17_dfs67")]
@@ -3909,6 +3891,13 @@ shape = SubResource("RectangleShape2D_ds380")
 [node name="Area2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(122, 328)
 shape = SubResource("RectangleShape2D_ds380")
+
+[node name="Stats" parent="." instance=ExtResource("28_e47sc")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
 
 [editable path="rompibles/Patito"]
 [editable path="rompibles/Planta"]

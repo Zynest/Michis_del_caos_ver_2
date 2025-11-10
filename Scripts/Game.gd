@@ -1,7 +1,7 @@
 extends Node
 
 var score = 0
-var time_left = 11
+var time_left = 6
 var target_score = 0
 var is_game_over = false
 var last_level_path: String = ""
@@ -11,7 +11,7 @@ func _ready() -> void:
 
 func reset():
 	score = 0
-	time_left = 11
+	time_left = 6
 	is_game_over = false
 	get_tree().paused = false
 
@@ -41,5 +41,3 @@ func restart_game() -> void:
 	reset()
 	get_tree().reload_current_scene()
 	get_tree().paused = false
-
-		

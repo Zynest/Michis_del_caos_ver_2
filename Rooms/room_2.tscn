@@ -1,9 +1,8 @@
-[gd_scene load_steps=56 format=4 uid="uid://bffq2a5x5c8d1"]
+[gd_scene load_steps=55 format=4 uid="uid://bffq2a5x5c8d1"]
 
 [ext_resource type="Script" uid="uid://ck3s4v6ub37l8" path="res://Scripts/room_2.gd" id="1_jxfwm"]
 [ext_resource type="PackedScene" uid="uid://3spfmc6o88v5" path="res://Rooms/gato.tscn" id="2_40i8j"]
-[ext_resource type="Script" uid="uid://b37yovqigrt31" path="res://Scripts/UI2D.gd" id="3_0o8i5"]
-[ext_resource type="FontFile" uid="uid://54l50lk1kjsu" path="res://assets/Minecraft.ttf" id="4_xnl7i"]
+[ext_resource type="PackedScene" uid="uid://ca1lpddh561gm" path="res://Rooms/stats.tscn" id="2_cdpl8"]
 [ext_resource type="PackedScene" uid="uid://cih5o3x1wdvdn" path="res://Rooms/collisiones.tscn" id="5_dhdxd"]
 [ext_resource type="PackedScene" uid="uid://dckekrq2nwq1a" path="res://Rooms/5_peso.tscn" id="6_4u6bs"]
 [ext_resource type="Texture2D" uid="uid://jstvxg1n4yq" path="res://assets/patito.png" id="7_j4uii"]
@@ -4401,23 +4400,6 @@ shape = SubResource("RectangleShape2D_42pht")
 position = Vector2(525, 381)
 scale = Vector2(2, 2)
 
-[node name="UI" type="CanvasLayer" parent="."]
-script = ExtResource("3_0o8i5")
-
-[node name="HudLabel" type="Label" parent="UI"]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -56.0
-offset_top = 66.0
-offset_right = 56.0
-offset_bottom = 97.0
-grow_horizontal = 2
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(1, 0.0235294, 0, 1)
-theme_override_fonts/font = ExtResource("4_xnl7i")
-theme_override_font_sizes/font_size = 30
-
 [node name="collisiones" type="Node" parent="."]
 
 [node name="StaticBody2D2" parent="collisiones" instance=ExtResource("5_dhdxd")]
@@ -4436,7 +4418,7 @@ position = Vector2(688, 442.00003)
 scale = Vector2(1, 2.6399999)
 
 [node name="StaticBody2D5" parent="collisiones" instance=ExtResource("5_dhdxd")]
-position = Vector2(464, 107)
+position = Vector2(464, 171)
 
 [node name="StaticBody2D6" parent="collisiones" instance=ExtResource("5_dhdxd")]
 position = Vector2(240.99998, 443.99997)
@@ -4465,7 +4447,7 @@ position = Vector2(240, 139)
 position = Vector2(848, 107)
 
 [node name="StaticBody2D12" parent="collisiones" instance=ExtResource("5_dhdxd")]
-position = Vector2(656, 171)
+position = Vector2(656, 203)
 
 [node name="StaticBody2D11" parent="collisiones" instance=ExtResource("5_dhdxd")]
 position = Vector2(880, 235)
@@ -4488,7 +4470,7 @@ position = Vector2(-1, 1)
 shape = SubResource("RectangleShape2D_algyo")
 
 [node name="Planta" parent="rompibles" instance=ExtResource("8_lcdfw")]
-position = Vector2(657, 117)
+position = Vector2(657, 141)
 
 [node name="Sprite2D" parent="rompibles/Planta" index="0"]
 scale = Vector2(2, 2)
@@ -4550,7 +4532,7 @@ metadata/_edit_lock_ = true
 [node name="Muebles" type="TileMapLayer" parent="fondo2"]
 z_index = -2
 scale = Vector2(2, 2)
-tile_map_data = PackedByteArray("AAAFAA4AAQABAAEAAAAGAA4AAQACAAEAAAAHAA0AAgAZAAoAAAAHAA4AAgAZAAsAAAAIAA0AAgANAAoAAAAIAA4AAgANAAsAAAAJAA0AAgAOAAoAAAAJAA4AAgAOAAsAAAAKAA0AAgAPAAoAAAAKAA4AAgAPAAsAAAAPAA0ACAAVAA4AAAAPAA4ACAAVAA8AAAAQAA0ACAAWAA4AAAAQAA4ACAAWAA8AAAARAA0ACAAXAA4AAAARAA4ACAAXAA8AAAAUAA4ACAAhAAMAAAAVAA4ACAAiAAMAAAAWAA4ACAAjAAMAAAAXAA4ACAAnAAMAAAAYAA4ACAAoAAMAAAAZAA4ACAApAAMAAAAaAA4ABwAeAAwAAAAbAA4ABwAfAAwAAAAcAA4ABwAPAAMAAAAcAA8ABwAdABIAAAAcABAABwAdABMAAAAdAA4ABwAQAAMAAAAdAA8ABwAeABIAAAAdABAABwAeABMAAAAFAA0AAQABAAAAAAAGAAQACAArAAoAAAAGAA0AAQACAAAAAAAHAAQACAAsAAoAAAAIAAQACAAtAAoAAAAKAAcACAArAAoAAAALAAcACAAsAAoAAAAMAAcACAAtAAoAAAANAAMACAArAAoAAAAOAAMACAAsAAoAAAAPAAMACAAtAAoAAAAPAAwACAAVAA0AAAAQAAwACAAWAA0AAAARAAwACAAXAA0AAAATAAUACAArAAoAAAAUAAUACAAsAAoAAAAUAA0ACAAhAAIAAAAVAAUACAAtAAoAAAAVAAoACAArAAoAAAAVAA0ACAAiAAIAAAAWAAoACAAsAAoAAAAWAA0ACAAjAAIAAAAXAAoACAAtAAoAAAAXAA0ACAAnAAIAAAAYAA0ACAAoAAIAAAAZAAMACAArAAoAAAAZAA0ACAApAAIAAAAaAAMACAAsAAoAAAAaAAcACAArAAoAAAAaAA0ABwAeAAsAAAAbAAMACAAtAAoAAAAbAAcACAAsAAoAAAAbAA0ABwAfAAsAAAAcAAcACAAtAAoAAAAcAA0ABwAPAAIAAAAdAA0ABwAQAAIAAAATAA8ABwAMAA0AAAATABAABwAMAA4AAAAWAA8ABwAKAA0AAAAWABAABwAKAA4AAAAUAA8ABwABAA0AAAAUABAABwABAA4AAAAVAA8ABwACAA0AAAAVABAABwACAA4AAAAIAAwAAgANAAkAAAAJAAwAAgAOAAkAAAAKAAwAAgAPAAkAAAAHAAwAAgAZAAkAAAA=")
+tile_map_data = PackedByteArray("AAAFAA4AAQABAAEAAAAGAA4AAQACAAEAAAAHAA0AAgAZAAoAAAAHAA4AAgAZAAsAAAAIAA0AAgANAAoAAAAIAA4AAgANAAsAAAAJAA0AAgAOAAoAAAAJAA4AAgAOAAsAAAAKAA0AAgAPAAoAAAAKAA4AAgAPAAsAAAAPAA0ACAAVAA4AAAAPAA4ACAAVAA8AAAAQAA0ACAAWAA4AAAAQAA4ACAAWAA8AAAARAA0ACAAXAA4AAAARAA4ACAAXAA8AAAAUAA4ACAAhAAMAAAAVAA4ACAAiAAMAAAAWAA4ACAAjAAMAAAAXAA4ACAAnAAMAAAAYAA4ACAAoAAMAAAAZAA4ACAApAAMAAAAaAA4ABwAeAAwAAAAbAA4ABwAfAAwAAAAcAA4ABwAPAAMAAAAcAA8ABwAdABIAAAAcABAABwAdABMAAAAdAA4ABwAQAAMAAAAdAA8ABwAeABIAAAAdABAABwAeABMAAAAFAA0AAQABAAAAAAAGAAQACAArAAoAAAAGAA0AAQACAAAAAAAHAAQACAAsAAoAAAAIAAQACAAtAAoAAAAKAAcACAArAAoAAAALAAcACAAsAAoAAAAMAAcACAAtAAoAAAAPAAwACAAVAA0AAAAQAAwACAAWAA0AAAARAAwACAAXAA0AAAAUAA0ACAAhAAIAAAAVAAoACAArAAoAAAAVAA0ACAAiAAIAAAAWAAoACAAsAAoAAAAWAA0ACAAjAAIAAAAXAAoACAAtAAoAAAAXAA0ACAAnAAIAAAAYAA0ACAAoAAIAAAAZAAMACAArAAoAAAAZAA0ACAApAAIAAAAaAAMACAAsAAoAAAAaAAcACAArAAoAAAAaAA0ABwAeAAsAAAAbAAMACAAtAAoAAAAbAAcACAAsAAoAAAAbAA0ABwAfAAsAAAAcAAcACAAtAAoAAAAcAA0ABwAPAAIAAAAdAA0ABwAQAAIAAAATAA8ABwAMAA0AAAATABAABwAMAA4AAAAWAA8ABwAKAA0AAAAWABAABwAKAA4AAAAUAA8ABwABAA0AAAAUABAABwABAA4AAAAVAA8ABwACAA0AAAAVABAABwACAA4AAAAIAAwAAgANAAkAAAAJAAwAAgAOAAkAAAAKAAwAAgAPAAkAAAAHAAwAAgAZAAkAAAANAAUACAArAAoAAAAOAAUACAAsAAoAAAAPAAUACAAtAAoAAAATAAYACAArAAoAAAAUAAYACAAsAAoAAAAVAAYACAAtAAoAAAA=")
 tile_set = SubResource("TileSet_1gwbq")
 metadata/_edit_lock_ = true
 
@@ -4590,7 +4572,7 @@ position = Vector2(239, 94)
 position = Vector2(879, 193)
 
 [node name="Tiempo3" parent="." groups=["Buff"] instance=ExtResource("25_6k6w7")]
-position = Vector2(465, 66)
+position = Vector2(465, 126)
 
 [node name="Sound" type="Node" parent="."]
 
@@ -4616,6 +4598,13 @@ shape = SubResource("RectangleShape2D_h7s4q")
 [node name="Area2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(122, 328)
 shape = SubResource("RectangleShape2D_h7s4q")
+
+[node name="Stats" parent="." instance=ExtResource("2_cdpl8")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
 
 [editable path="rompibles/Patito"]
 [editable path="rompibles/Planta"]

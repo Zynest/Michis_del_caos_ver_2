@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://ca1lpddh561gm"]
+
+[ext_resource type="Texture2D" uid="uid://0w078x41iof1" path="res://assets/time.png" id="1_1jg26"]
+[ext_resource type="Script" uid="uid://thexwbmg77i0" path="res://Scripts/stats.gd" id="1_gn0an"]
+[ext_resource type="Texture2D" uid="uid://c162x3rxmmrmk" path="res://assets/score.png" id="2_6uwns"]
+[ext_resource type="FontFile" uid="uid://54l50lk1kjsu" path="res://assets/Minecraft.ttf" id="4_u75cq"]
+
+[node name="Stats" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gn0an")
+metadata/_edit_lock_ = true
+
+[node name="Time" type="Sprite2D" parent="."]
+position = Vector2(699, 78)
+texture = ExtResource("1_1jg26")
+region_enabled = true
+region_rect = Rect2(0, 0, 84.19229, 22)
+
+[node name="Score" type="Sprite2D" parent="."]
+position = Vector2(461, 80)
+texture = ExtResource("2_6uwns")
+region_enabled = true
+region_rect = Rect2(0, 0, 102.11365, 22)
+
+[node name="score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 522.0
+offset_top = 69.0
+offset_right = 579.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0.7921569, 0.34509805, 0.18431373, 1)
+theme_override_colors/font_shadow_color = Color(0.35686275, 0.16862746, 0.13725491, 1)
+theme_override_colors/font_outline_color = Color(0.35686275, 0.16862746, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("4_u75cq")
+theme_override_font_sizes/font_size = 25
+text = "sas"
+
+[node name="time" type="Label" parent="."]
+layout_mode = 0
+offset_left = 750.0
+offset_top = 69.0
+offset_right = 807.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0.7921569, 0.34509805, 0.18431373, 1)
+theme_override_colors/font_shadow_color = Color(0.35686275, 0.16862746, 0.13725491, 1)
+theme_override_colors/font_outline_color = Color(0.35686275, 0.16862746, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("4_u75cq")
+theme_override_font_sizes/font_size = 25
+text = "sas"
