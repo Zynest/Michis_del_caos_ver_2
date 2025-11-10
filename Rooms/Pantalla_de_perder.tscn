@@ -1,13 +1,74 @@
-[gd_scene load_steps=12 format=3 uid="uid://cfgbd1swcb1kg"]
+[gd_scene load_steps=18 format=3 uid="uid://cfgbd1swcb1kg"]
 
 [ext_resource type="Script" uid="uid://ylr8u5qkc6w" path="res://Scripts/pantalla_de_perder.gd" id="1_owudw"]
 [ext_resource type="FontFile" uid="uid://54l50lk1kjsu" path="res://assets/Minecraft.ttf" id="2_n00tf"]
-[ext_resource type="Texture2D" uid="uid://73ur454vwoaw" path="res://assets/1retry.png" id="3_gkrmy"]
+[ext_resource type="Texture2D" uid="uid://j6axv8k874w1" path="res://assets/retry_button1.png" id="3_gkrmy"]
 [ext_resource type="Texture2D" uid="uid://cs44hsmkqxxkx" path="res://assets/mamadisimo-animation.png" id="3_n00tf"]
-[ext_resource type="Texture2D" uid="uid://bhqsyulx6dcoc" path="res://assets/1retry (2).png" id="4_1rkej"]
+[ext_resource type="Texture2D" uid="uid://b61n80mohx186" path="res://assets/retry_button_pressed.png" id="4_1rkej"]
 [ext_resource type="Texture2D" uid="uid://mv7v0mm77048" path="res://assets/32bit5peso.png" id="4_tj6wv"]
-[ext_resource type="Texture2D" uid="uid://cjklvcv6xicib" path="res://assets/1menu1.png" id="5_gkrmy"]
-[ext_resource type="Texture2D" uid="uid://3dgclv4oovws" path="res://assets/1menu2.png" id="6_1rkej"]
+[ext_resource type="Texture2D" uid="uid://df1n00wal5do7" path="res://assets/menu_button1.png" id="5_seytu"]
+[ext_resource type="Texture2D" uid="uid://bwwwnq5loa0pc" path="res://assets/menu_button_pressed.png" id="6_laop5"]
+
+[sub_resource type="Animation" id="Animation_seytu"]
+resource_name = "mamadisimo move"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(968.00006, -183.99988), Vector2(968, 408)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.5, 3, 3.5, 4, 4.5, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_laop5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1012, -183.99988)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6yvgn"]
+_data = {
+&"RESET": SubResource("Animation_laop5"),
+&"mamadisimo move": SubResource("Animation_seytu")
+}
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tj6wv"]
 atlas = ExtResource("3_n00tf")
@@ -31,6 +92,68 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_gkrmy"]
+resource_name = "5 peso movimiento"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/32Bit5Peso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-159.99997, 455.99997), Vector2(215.99998, 456)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/32Bit5Peso:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.51),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_1rkej"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/32Bit5Peso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-159.99997, 455.99997)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/32Bit5Peso:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_seytu"]
+_data = {
+&"5 peso movimiento": SubResource("Animation_gkrmy"),
+&"RESET": SubResource("Animation_1rkej")
+}
+
 [node name="pantalla_de_perder" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -39,6 +162,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_owudw")
+metadata/_edit_lock_ = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -68,18 +192,18 @@ text = "Perdistes bot"
 
 [node name="Retry_button" type="TextureButton" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -128.0
-offset_top = -108.0
-offset_right = -64.0
-offset_bottom = -44.0
+anchors_preset = -1
+anchor_left = 0.49400002
+anchor_top = 0.272
+anchor_right = 0.49400002
+anchor_bottom = 0.272
+offset_left = -137.08801
+offset_top = 119.74399
+offset_right = -79.08801
+offset_bottom = 141.74399
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(4, 4)
+scale = Vector2(5, 5)
 texture_normal = ExtResource("3_gkrmy")
 texture_pressed = ExtResource("4_1rkej")
 
@@ -90,29 +214,41 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -128.0
-offset_top = 44.0
-offset_right = -64.0
-offset_bottom = 108.0
+offset_left = -144.0
+offset_top = 100.0
+offset_right = -86.0
+offset_bottom = 122.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(4, 4)
-texture_normal = ExtResource("5_gkrmy")
-texture_pressed = ExtResource("6_1rkej")
+scale = Vector2(5, 5)
+texture_normal = ExtResource("5_seytu")
+texture_pressed = ExtResource("6_laop5")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1012, 451)
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+root_node = NodePath("AnimatedSprite2D")
+libraries = {
+&"": SubResource("AnimationLibrary_6yvgn")
+}
+autoplay = "mamadisimo move"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimationPlayer2"]
+position = Vector2(1012, -183.99988)
 scale = Vector2(10, 10)
 sprite_frames = SubResource("SpriteFrames_rlind")
 animation = &"mamadisimo_idle"
 autoplay = "mamadisimo_idle"
-metadata/_edit_lock_ = true
 
-[node name="32Bit5Peso" type="Sprite2D" parent="."]
-position = Vector2(196, 478)
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_seytu")
+}
+autoplay = "5 peso movimiento"
+
+[node name="32Bit5Peso" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(-159.99997, 455.99997)
 scale = Vector2(10, 10)
 texture = ExtResource("4_tj6wv")
-metadata/_edit_lock_ = true
+flip_h = true
 
 [connection signal="pressed" from="Retry_button" to="." method="_on_retry_button_pressed"]
 [connection signal="pressed" from="Salir_button2" to="." method="_on_salir_button_pressed"]

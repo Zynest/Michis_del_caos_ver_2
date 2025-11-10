@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bp1qx4jksuxpw"
-path="res://.godot/imported/1start1.png-0960ee5169d218785020e13ab974bfb1.ctex"
+uid="uid://djoatiobw4d6x"
+path="res://.godot/imported/zoomies_attack1.png-af5db844d10d704f4d445855d87c8f13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/1start1.png"
-dest_files=["res://.godot/imported/1start1.png-0960ee5169d218785020e13ab974bfb1.ctex"]
+source_file="res://assets/zoomies_attack1.png"
+dest_files=["res://.godot/imported/zoomies_attack1.png-af5db844d10d704f4d445855d87c8f13.ctex"]
 
 [params]
 
