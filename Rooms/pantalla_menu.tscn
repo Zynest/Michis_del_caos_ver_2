@@ -1565,6 +1565,7 @@ _data = {
 
 [sub_resource type="Animation" id="Animation_1u4pg"]
 length = 0.001
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1580,8 +1581,8 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_md42v"]
 resource_name = "move"
-length = 5.0
-loop_mode = 1
+length = 3.0
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1589,10 +1590,10 @@ tracks/0/path = NodePath(".:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 2, 3, 4.02, 5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 1, 2, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 0.18151425, -0.18325958, 0.18151425, 0.0, 0.18151425]
+"values": [0.0, 0.18151425, -0.18325958, 0.18151425]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hlbr5"]
@@ -1693,6 +1694,11 @@ texture_pressed = ExtResource("6_45wqa")
 
 [node name="Animations" type="Node" parent="."]
 
+[node name="Sprite2D" type="Sprite2D" parent="Animations"]
+position = Vector2(990, 283)
+scale = Vector2(4, 4)
+texture = ExtResource("13_cbhai")
+
 [node name="Gato" type="AnimationPlayer" parent="Animations"]
 root_node = NodePath("NadiePuedeBañarseDosVecesEnElMismoRío")
 libraries = {
@@ -1705,16 +1711,11 @@ position = Vector2(59, 487)
 texture = ExtResource("9_45wqa")
 
 [node name="Title" type="AnimationPlayer" parent="Animations"]
-root_node = NodePath("Sprite2D")
+root_node = NodePath("../Sprite2D")
 libraries = {
 &"": SubResource("AnimationLibrary_hlbr5")
 }
 autoplay = "move"
-
-[node name="Sprite2D" type="Sprite2D" parent="Animations/Title"]
-position = Vector2(990, 283)
-scale = Vector2(4, 4)
-texture = ExtResource("13_cbhai")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Animations"]
 position = Vector2(601, 223)
