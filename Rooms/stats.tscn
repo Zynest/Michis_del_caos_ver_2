@@ -38,7 +38,6 @@ theme_override_colors/font_shadow_color = Color(0.35686275, 0.16862746, 0.137254
 theme_override_colors/font_outline_color = Color(0.35686275, 0.16862746, 0.13725491, 1)
 theme_override_fonts/font = ExtResource("4_u75cq")
 theme_override_font_sizes/font_size = 25
-text = "sas"
 
 [node name="time" type="Label" parent="."]
 layout_mode = 0
@@ -51,4 +50,3 @@ theme_override_colors/font_shadow_color = Color(0.35686275, 0.16862746, 0.137254
 theme_override_colors/font_outline_color = Color(0.35686275, 0.16862746, 0.13725491, 1)
 theme_override_fonts/font = ExtResource("4_u75cq")
 theme_override_font_sizes/font_size = 25
-text = "sas"
