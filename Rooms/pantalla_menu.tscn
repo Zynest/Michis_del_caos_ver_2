@@ -25,6 +25,7 @@ grow_vertical = 2
 texture = ExtResource("2_pcby0")
 
 [node name="Menu" type="Label" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 479.0
 offset_top = 219.0
