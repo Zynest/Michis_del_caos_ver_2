@@ -28,7 +28,7 @@ func _process(delta):
 	if is_game_over:
 		return
 	time_left -= delta
-	if time_left <= 0:
+	if time_left < 0:
 		game_over()
 
 func game_over():
