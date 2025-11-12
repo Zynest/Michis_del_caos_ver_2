@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://dpmo1wq5rmufm"]
+[gd_scene load_steps=27 format=4 uid="uid://dpmo1wq5rmufm"]
 
 [ext_resource type="Script" uid="uid://c5arh078npgy3" path="res://Scripts/pantalla_de_ganar.gd" id="1_xfx4y"]
 [ext_resource type="Texture2D" uid="uid://blmo1jba6atv0" path="res://assets/floorswalls_LRK - copia-export.png" id="2_mw14e"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://hq8ky1k6uym2" path="res://assets/next_button_pressed.png" id="7_ef8jt"]
 [ext_resource type="Texture2D" uid="uid://cs44hsmkqxxkx" path="res://assets/mamadisimo-animation.png" id="12_ef8jt"]
 [ext_resource type="AudioStream" uid="uid://cg6rhrc8h2ue4" path="res://Sound/Win.mp3" id="12_x7mod"]
+[ext_resource type="AudioStream" uid="uid://i5y1rx3bxc7a" path="res://Sound/selected.wav" id="13_rldrq"]
 [ext_resource type="Texture2D" uid="uid://c4uc2cjcyovx5" path="res://assets/youwin2.png" id="13_x7mod"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x7mod"]
@@ -889,8 +890,11 @@ autoplay = "mamadisimo_idle"
 
 [node name="Win" type="AudioStreamPlayer2D" parent="Sound"]
 stream = ExtResource("12_x7mod")
-volume_db = 0.1
+volume_db = -10.0
 autoplay = true
+
+[node name="Button" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource("13_rldrq")
 
 [connection signal="pressed" from="Menu_button" to="." method="_on_menu_button_pressed"]
 [connection signal="pressed" from="Next_level" to="." method="_on_next_level_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://bk6xqg1myd4rb"]
+[gd_scene load_steps=36 format=4 uid="uid://bk6xqg1myd4rb"]
 
 [ext_resource type="Script" uid="uid://dvtufdbwlauxn" path="res://Scripts/pantalla_menu.gd" id="1_f1jph"]
 [ext_resource type="Texture2D" uid="uid://blmo1jba6atv0" path="res://assets/floorswalls_LRK - copia-export.png" id="3_0jsmk"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://djoatiobw4d6x" path="res://assets/zoomies_attack1.png" id="14_md42v"]
 [ext_resource type="Texture2D" uid="uid://clsqxqkqsybtk" path="res://assets/zoomies_attack2.png" id="15_1u4pg"]
 [ext_resource type="AudioStream" uid="uid://cx2vqysh3mphm" path="res://Sound/Menu.mp3" id="15_md42v"]
+[ext_resource type="AudioStream" uid="uid://i5y1rx3bxc7a" path="res://Sound/selected.wav" id="16_1u4pg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_45wqa"]
 texture = ExtResource("3_0jsmk")
@@ -1743,6 +1744,10 @@ texture = ExtResource("11_45wqa")
 
 [node name="Menu" type="AudioStreamPlayer2D" parent="Sound"]
 stream = ExtResource("15_md42v")
+volume_db = -10.0
 autoplay = true
+
+[node name="Button" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource("16_1u4pg")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]

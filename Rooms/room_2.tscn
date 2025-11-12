@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=4 uid="uid://bffq2a5x5c8d1"]
+[gd_scene load_steps=56 format=4 uid="uid://bffq2a5x5c8d1"]
 
 [ext_resource type="Script" uid="uid://ck3s4v6ub37l8" path="res://Scripts/room_2.gd" id="1_jxfwm"]
 [ext_resource type="PackedScene" uid="uid://3spfmc6o88v5" path="res://Rooms/gato.tscn" id="2_40i8j"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://se7gbsdbqjxk" path="res://assets/kitchen_LRK.png" id="22_2i334"]
 [ext_resource type="Texture2D" uid="uid://chcv2o41jikaq" path="res://assets/livingroom_LRK.png" id="23_t2y4a"]
 [ext_resource type="PackedScene" uid="uid://dngd8bsyjrf0i" path="res://Rooms/item_debuff.tscn" id="25_6k6w7"]
+[ext_resource type="AudioStream" uid="uid://cip1xj7ns3gl" path="res://Sound/in_Game.mp3" id="25_db0i4"]
 [ext_resource type="AudioStream" uid="uid://bw22nie4g1rop" path="res://Sound/explosion.wav" id="26_tfe81"]
 [ext_resource type="AudioStream" uid="uid://csyuyy7mmg0bt" path="res://Sound/Pickup_time.wav" id="27_60vk5"]
 
@@ -4390,7 +4391,7 @@ size = Vector2(77, 700)
 script = ExtResource("1_jxfwm")
 
 [node name="Floor" type="StaticBody2D" parent="." groups=["Ground"]]
-position = Vector2(550, 613.99994)
+position = Vector2(550, 614)
 scale = Vector2(1, 7.08)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
@@ -4403,9 +4404,9 @@ scale = Vector2(2, 2)
 [node name="collisiones" type="Node" parent="."]
 
 [node name="StaticBody2D2" parent="collisiones" instance=ExtResource("5_dhdxd")]
-position = Vector2(672.00006, 497.00003)
-rotation = -3.1415927
-scale = Vector2(0.6176581, -0.89751)
+position = Vector2(672, 497)
+rotation = -3.14159
+scale = Vector2(0.617658, -0.89751)
 
 [node name="StaticBody2D" parent="collisiones" instance=ExtResource("5_dhdxd")]
 position = Vector2(368, 234)
@@ -4414,27 +4415,27 @@ position = Vector2(368, 234)
 position = Vector2(720, 330)
 
 [node name="StaticBody2D4" parent="collisiones" instance=ExtResource("5_dhdxd")]
-position = Vector2(688, 442.00003)
-scale = Vector2(1, 2.6399999)
+position = Vector2(688, 442)
+scale = Vector2(1, 2.64)
 
 [node name="StaticBody2D5" parent="collisiones" instance=ExtResource("5_dhdxd")]
 position = Vector2(464, 171)
 
 [node name="StaticBody2D6" parent="collisiones" instance=ExtResource("5_dhdxd")]
-position = Vector2(240.99998, 443.99997)
-scale = Vector2(-0.3696, 3.7241445)
+position = Vector2(241, 444)
+scale = Vector2(-0.3696, 3.72414)
 
 [node name="StaticBody2D7" parent="collisiones" instance=ExtResource("5_dhdxd")]
-position = Vector2(783.99994, 442)
+position = Vector2(784, 442)
 scale = Vector2(1.03999, 2.55999)
 
 [node name="StaticBody2D8" parent="collisiones" instance=ExtResource("5_dhdxd")]
 position = Vector2(190, 460)
-scale = Vector2(0.72780824, 2.0499694)
+scale = Vector2(0.727808, 2.04997)
 
 [node name="StaticBody2D9" parent="collisiones" instance=ExtResource("5_dhdxd")]
 position = Vector2(305, 435)
-scale = Vector2(-1.029343, 4.643273)
+scale = Vector2(-1.02934, 4.64327)
 
 [node name="StaticBody2D10" parent="collisiones" instance=ExtResource("5_dhdxd")]
 position = Vector2(528, 447)
@@ -4454,7 +4455,7 @@ position = Vector2(880, 235)
 
 [node name="StaticBody2D15" parent="collisiones" instance=ExtResource("5_dhdxd")]
 position = Vector2(864, 450)
-scale = Vector2(0.31434092, 1.6716998)
+scale = Vector2(0.314341, 1.6717)
 
 [node name="rompibles" type="Node" parent="."]
 
@@ -4511,13 +4512,13 @@ scale = Vector2(2, 2)
 texture = ExtResource("12_jxfwm")
 
 [node name="CollisionShape2D" parent="rompibles/Copa" index="1"]
-position = Vector2(-1, -13.999999)
-scale = Vector2(2.2640061, 2.664005)
+position = Vector2(-1, -14)
+scale = Vector2(2.26401, 2.66401)
 shape = SubResource("CapsuleShape2D_40i8j")
 
 [node name="AudioStreamPlayer2D" parent="rompibles/Copa" index="2"]
 position = Vector2(0, -15)
-scale = Vector2(1.2145916, 1.4291825)
+scale = Vector2(1.21459, 1.42918)
 
 [node name="fondo2" type="Node" parent="."]
 
@@ -4562,7 +4563,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.20784314, 0.05490196, 0, 1)
+color = Color(0.207843, 0.054902, 0, 1)
 metadata/_edit_lock_ = true
 
 [node name="Tiempo" parent="." groups=["Buff"] instance=ExtResource("25_6k6w7")]
@@ -4584,11 +4585,15 @@ volume_db = 0.5
 stream = ExtResource("27_60vk5")
 volume_db = -10.0
 
+[node name="In_Game" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource("25_db0i4")
+autoplay = true
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="Area2D3" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(575, -38)
-scale = Vector2(12.72, 0.19999999)
+scale = Vector2(12.72, 0.2)
 shape = SubResource("RectangleShape2D_h7s4q")
 
 [node name="Area2D2" type="CollisionShape2D" parent="StaticBody2D"]

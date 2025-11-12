@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://cfgbd1swcb1kg"]
+[gd_scene load_steps=23 format=4 uid="uid://cfgbd1swcb1kg"]
 
 [ext_resource type="Script" uid="uid://ylr8u5qkc6w" path="res://Scripts/pantalla_de_perder.gd" id="1_owudw"]
 [ext_resource type="Texture2D" uid="uid://blmo1jba6atv0" path="res://assets/floorswalls_LRK - copia-export.png" id="2_laop5"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bwwwnq5loa0pc" path="res://assets/menu_button_pressed.png" id="6_laop5"]
 [ext_resource type="Texture2D" uid="uid://c3kkuf1uuyxtk" path="res://assets/youlose-export.png" id="11_laop5"]
 [ext_resource type="AudioStream" uid="uid://cxdsh514jit7x" path="res://Sound/Game Over.mp3" id="11_so407"]
+[ext_resource type="AudioStream" uid="uid://i5y1rx3bxc7a" path="res://Sound/selected.wav" id="12_l5nha"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c1k8y"]
 texture = ExtResource("2_laop5")
@@ -856,8 +857,11 @@ texture = ExtResource("11_laop5")
 
 [node name="Game Over" type="AudioStreamPlayer2D" parent="Sound"]
 stream = ExtResource("11_so407")
-volume_db = 0.1
+volume_db = -10.0
 autoplay = true
+
+[node name="Button" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource("12_l5nha")
 
 [connection signal="pressed" from="Retry_button" to="." method="_on_retry_button_pressed"]
 [connection signal="pressed" from="Salir_button2" to="." method="_on_salir_button_pressed"]
