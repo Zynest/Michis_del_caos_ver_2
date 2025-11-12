@@ -4,5 +4,5 @@ extends AnimatedSprite2D
 func _ready():
 	play()
 	sound.play()
-	await get_tree().create_timer(0.8).timeout #Esperá a que se termine el timer interno
+	await get_tree().create_timer(0.8).timeout
 	queue_free()
