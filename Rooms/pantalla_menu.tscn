@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://bk6xqg1myd4rb"]
+[gd_scene load_steps=35 format=4 uid="uid://bk6xqg1myd4rb"]
 
 [ext_resource type="Script" uid="uid://dvtufdbwlauxn" path="res://Scripts/pantalla_menu.gd" id="1_f1jph"]
 [ext_resource type="Texture2D" uid="uid://blmo1jba6atv0" path="res://assets/floorswalls_LRK - copia-export.png" id="3_0jsmk"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://oaj6v25gf6y4" path="res://assets/planta.png" id="13_cbhai"]
 [ext_resource type="Texture2D" uid="uid://djoatiobw4d6x" path="res://assets/zoomies_attack1.png" id="14_md42v"]
 [ext_resource type="Texture2D" uid="uid://clsqxqkqsybtk" path="res://assets/zoomies_attack2.png" id="15_1u4pg"]
+[ext_resource type="AudioStream" uid="uid://cx2vqysh3mphm" path="res://Sound/Menu.mp3" id="15_md42v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_45wqa"]
 texture = ExtResource("3_0jsmk")
@@ -1593,7 +1594,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1, 2, 3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 0.18151425, -0.18325958, 0.18151425]
+"values": [0.0, 0.181514, -0.18326, 0.181514]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hlbr5"]
@@ -1628,7 +1629,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(333.00003, 478)]
+"values": [Vector2(333, 478)]
 }
 
 [sub_resource type="Animation" id="Animation_pcuk0"]
@@ -1642,10 +1643,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4920969),
+"times": PackedFloat32Array(0, 0.492097),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(752, 567.00006), Vector2(698.0001, 508.00006)]
+"values": [Vector2(752, 567), Vector2(698, 508)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_o083k"]
@@ -1682,9 +1683,9 @@ anchor_left = 0.503
 anchor_top = 0.762
 anchor_right = 0.503
 anchor_bottom = 0.762
-offset_left = -145.45605
+offset_left = -145.456
 offset_top = -54.776
-offset_right = -87.456055
+offset_right = -87.4561
 offset_bottom = -32.776
 grow_horizontal = 2
 grow_vertical = 2
@@ -1723,7 +1724,7 @@ scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_hlbr5")
 animation = &"title"
 autoplay = "title"
-frame_progress = 0.48524532
+frame_progress = 0.485245
 
 [node name="Finger" type="AnimationPlayer" parent="Animations"]
 root_node = NodePath("Finger")
@@ -1733,9 +1734,15 @@ libraries = {
 autoplay = "finger_animation"
 
 [node name="Finger" type="Sprite2D" parent="Animations/Finger"]
-position = Vector2(333.00003, 478)
-rotation = -2.316713
+position = Vector2(333, 478)
+rotation = -2.31671
 scale = Vector2(3, 3)
 texture = ExtResource("11_45wqa")
+
+[node name="Sound" type="Node" parent="."]
+
+[node name="Menu" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource("15_md42v")
+autoplay = true
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=4 uid="uid://d03vnhsuhjelp"]
+[gd_scene load_steps=56 format=4 uid="uid://d03vnhsuhjelp"]
 
 [ext_resource type="PackedScene" uid="uid://3spfmc6o88v5" path="res://Rooms/gato.tscn" id="1_gq8um"]
 [ext_resource type="Script" uid="uid://dvnbccg6ogobc" path="res://Scripts/room_1.gd" id="1_hm3dd"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://jstvxg1n4yq" path="res://assets/patito.png" id="20_iis2n"]
 [ext_resource type="Texture2D" uid="uid://mxqgkpse8h6m" path="res://assets/lamp.png" id="23_bm4s0"]
 [ext_resource type="Texture2D" uid="uid://caaec034ufi0o" path="res://assets/pescaito.png" id="25_mvwb6"]
+[ext_resource type="AudioStream" uid="uid://cip1xj7ns3gl" path="res://Sound/in_Game.mp3" id="26_ds380"]
 [ext_resource type="PackedScene" uid="uid://dngd8bsyjrf0i" path="res://Rooms/item_debuff.tscn" id="27_ds380"]
 [ext_resource type="AudioStream" uid="uid://csyuyy7mmg0bt" path="res://Sound/Pickup_time.wav" id="27_e47sc"]
 [ext_resource type="PackedScene" uid="uid://ca1lpddh561gm" path="res://Rooms/stats.tscn" id="28_e47sc"]
@@ -3741,7 +3742,7 @@ scale = Vector2(0.327807, 4.88997)
 
 [node name="StaticBody2D9" parent="collisiones" instance=ExtResource("17_dfs67")]
 position = Vector2(368, 465)
-scale = Vector2(-0.30934304, 4.923278)
+scale = Vector2(-0.309343, 4.92328)
 
 [node name="StaticBody2D10" parent="collisiones" instance=ExtResource("17_dfs67")]
 position = Vector2(528, 480)
@@ -3792,13 +3793,13 @@ scale = Vector2(2, 2)
 texture = ExtResource("10_ds380")
 
 [node name="CollisionShape2D" parent="rompibles/Copa" index="1"]
-position = Vector2(-1, -13.999999)
-scale = Vector2(2.2640061, 2.664005)
+position = Vector2(-1, -14)
+scale = Vector2(2.26401, 2.66401)
 shape = SubResource("CapsuleShape2D_ys5yx")
 
 [node name="AudioStreamPlayer2D" parent="rompibles/Copa" index="2"]
 position = Vector2(0, -15)
-scale = Vector2(1.2145916, 1.4291825)
+scale = Vector2(1.21459, 1.42918)
 
 [node name="Lampara" parent="rompibles" instance=ExtResource("4_uj1e3")]
 position = Vector2(720, 311)
@@ -3877,11 +3878,15 @@ volume_db = 0.5
 stream = ExtResource("27_e47sc")
 volume_db = -10.0
 
+[node name="In_Game" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource("26_ds380")
+autoplay = true
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="Area2D3" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(575, -38)
-scale = Vector2(12.72, 0.19999999)
+scale = Vector2(12.72, 0.2)
 shape = SubResource("RectangleShape2D_ds380")
 
 [node name="Area2D2" type="CollisionShape2D" parent="StaticBody2D"]

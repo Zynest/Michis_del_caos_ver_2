@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://cfgbd1swcb1kg"]
+[gd_scene load_steps=22 format=4 uid="uid://cfgbd1swcb1kg"]
 
 [ext_resource type="Script" uid="uid://ylr8u5qkc6w" path="res://Scripts/pantalla_de_perder.gd" id="1_owudw"]
 [ext_resource type="Texture2D" uid="uid://blmo1jba6atv0" path="res://assets/floorswalls_LRK - copia-export.png" id="2_laop5"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://df1n00wal5do7" path="res://assets/menu_button1.png" id="5_seytu"]
 [ext_resource type="Texture2D" uid="uid://bwwwnq5loa0pc" path="res://assets/menu_button_pressed.png" id="6_laop5"]
 [ext_resource type="Texture2D" uid="uid://c3kkuf1uuyxtk" path="res://assets/youlose-export.png" id="11_laop5"]
+[ext_resource type="AudioStream" uid="uid://cxdsh514jit7x" path="res://Sound/Game Over.mp3" id="11_so407"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c1k8y"]
 texture = ExtResource("2_laop5")
@@ -693,7 +694,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 2.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-159.99997, 511), Vector2(216, 511)]
+"values": [Vector2(-160, 511), Vector2(216, 511)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -720,7 +721,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-159.99997, 455.99997)]
+"values": [Vector2(-160, 456)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -798,14 +799,14 @@ metadata/_edit_lock_ = true
 [node name="Retry_button" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.49400002
+anchor_left = 0.494
 anchor_top = 0.272
-anchor_right = 0.49400002
+anchor_right = 0.494
 anchor_bottom = 0.272
 offset_left = -453.838
-offset_top = -124.50601
+offset_top = -124.506
 offset_right = -395.838
-offset_bottom = -102.50601
+offset_bottom = -102.506
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("3_gkrmy")
@@ -834,7 +835,7 @@ libraries = {
 autoplay = "5 peso movimiento"
 
 [node name="32Bit5Peso" type="Sprite2D" parent="AnimationPlayer"]
-position = Vector2(-159.99997, 455.99997)
+position = Vector2(-160, 456)
 scale = Vector2(10, 10)
 texture = ExtResource("4_tj6wv")
 flip_h = true
@@ -850,6 +851,13 @@ autoplay = "you_lose_animation"
 position = Vector2(572, 120)
 scale = Vector2(4, 4)
 texture = ExtResource("11_laop5")
+
+[node name="Sound" type="Node" parent="."]
+
+[node name="Game Over" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource("11_so407")
+volume_db = 0.1
+autoplay = true
 
 [connection signal="pressed" from="Retry_button" to="." method="_on_retry_button_pressed"]
 [connection signal="pressed" from="Salir_button2" to="." method="_on_salir_button_pressed"]
