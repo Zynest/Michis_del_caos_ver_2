@@ -4587,6 +4587,7 @@ volume_db = -10.0
 
 [node name="In_Game" type="AudioStreamPlayer2D" parent="Sound"]
 stream = ExtResource("25_db0i4")
+volume_db = -10.0
 autoplay = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]

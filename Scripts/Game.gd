@@ -6,7 +6,7 @@ var target_score = 0
 var is_game_over = false
 var last_level_path: String = ""
 var Level = 0
-var current_scene_name: int = 0
+var Nivel: int = 0
 
 func _ready() -> void:
 	get_tree().paused = true
@@ -36,7 +36,7 @@ func _process(delta):
 func game_over():
 	is_game_over = true
 	await get_tree().create_timer(0.6).timeout
-	get_tree().change_scene_to_file("res://Rooms/pantalla_de_perder.tscn")
+	get_tree().change_scene_to_file("res://Rooms/Pantalla_de_perder.tscn")
 	get_tree().paused = true
 
 func restart_game() -> void:

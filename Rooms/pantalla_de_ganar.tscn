@@ -865,7 +865,7 @@ root_node = NodePath("Youwin2")
 libraries = {
 &"": SubResource("AnimationLibrary_ef8jt")
 }
-autoplay = "you_win_animation"
+autoplay = "RESET"
 
 [node name="Youwin2" type="Sprite2D" parent="animations/AnimationPlayer"]
 position = Vector2(573, 119)

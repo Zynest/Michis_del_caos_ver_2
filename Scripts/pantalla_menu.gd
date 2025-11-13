@@ -7,4 +7,5 @@ func _ready() -> void:
 func _on_play_pressed() -> void:
 	button.play()
 	await get_tree().create_timer(0.3).timeout
-	get_tree().change_scene_to_file("res://Rooms/Room_1.tscn")
+	#get_tree().change_scene_to_file("res://Rooms/Room_1.tscn")
+	FadeTransicion.fade_to_scene("res://Rooms/Room_1.tscn")
